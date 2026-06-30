@@ -40,7 +40,7 @@ A client-side developer utility hub built with React 19, Vite 8, and Tailwind CS
 
 ## Getting Started
 
-**Prerequisites:** Node.js 20 or later.
+**Prerequisites:** Node.js 22 or later.
 
 ```bash
 # Install dependencies
@@ -56,7 +56,7 @@ npm test
 npm run build
 ```
 
-The dev server starts at `http://localhost:5173`. The production build outputs to `dist/` and is configured for deployment to the `/devchest/` subpath on GitHub Pages.
+The dev server starts at `http://localhost:5173`. The production build outputs to `dist/` and is configured for deployment to the `/DevChest/` subpath on GitHub Pages.
 
 ---
 
