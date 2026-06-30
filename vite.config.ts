@@ -9,5 +9,5 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] }),
   ],
-  base: '/devchest/',
+  base: '/DevChest/',
 })

@@ -71,7 +71,7 @@ Enabled via `babel-plugin-react-compiler` + `@rolldown/plugin-babel`. Do not add
 
 ## GitHub Pages Deployment
 
-`base: '/devchest/'` is set in `vite.config.ts`. All asset paths in the built output are relative to this subpath. Do not remove or change it.
+`base: '/DevChest/'` is set in `vite.config.ts`. The path must match the exact repo name casing (`DevChest`) since GitHub Pages is case-sensitive. Do not remove or change it.
 
 ## Testing Rules
 
