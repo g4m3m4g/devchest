@@ -1,122 +1,118 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { lazy, Suspense } from 'react';
+import { ToolProvider, useTool } from './context/ToolContext';
+import { TOOLS, CATEGORIES } from './config/tools';
+import Sidebar from './components/layout/Sidebar';
 
-function App() {
-  const [count, setCount] = useState(0)
+const JsonFormatter    = lazy(() => import('./components/tools/formatters/JsonFormatter'));
+const SqlFormatter     = lazy(() => import('./components/tools/formatters/SqlFormatter'));
+const HtmlCssMinifier  = lazy(() => import('./components/tools/formatters/HtmlCssMinifier'));
+const Base64Tool       = lazy(() => import('./components/tools/encoders/Base64Tool'));
+const UrlEncoder       = lazy(() => import('./components/tools/encoders/UrlEncoder'));
+const JwtDecoder       = lazy(() => import('./components/tools/encoders/JwtDecoder'));
+const RegexTester      = lazy(() => import('./components/tools/text/RegexTester'));
+const CaseConverter    = lazy(() => import('./components/tools/text/CaseConverter'));
+const DiffChecker      = lazy(() => import('./components/tools/text/DiffChecker'));
+const HashGenerator    = lazy(() => import('./components/tools/generators/HashGenerator'));
+const UuidGenerator    = lazy(() => import('./components/tools/generators/UuidGenerator'));
+const TimestampConverter = lazy(() => import('./components/tools/generators/TimestampConverter'));
 
+const TOOL_MAP: Record<string, React.ReactNode> = {
+  'json-formatter':      <JsonFormatter />,
+  'sql-formatter':       <SqlFormatter />,
+  'html-css-minifier':   <HtmlCssMinifier />,
+  'base64':              <Base64Tool />,
+  'url-encoder':         <UrlEncoder />,
+  'jwt-decoder':         <JwtDecoder />,
+  'regex-tester':        <RegexTester />,
+  'case-converter':      <CaseConverter />,
+  'diff-checker':        <DiffChecker />,
+  'hash-generator':      <HashGenerator />,
+  'uuid-generator':      <UuidGenerator />,
+  'timestamp-converter': <TimestampConverter />,
+};
+
+function ToolFallback() {
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+    <div className="flex items-center justify-center h-full">
+      <div className="w-5 h-5 rounded-full border-2 border-blue-500 border-t-transparent animate-spin" />
+    </div>
+  );
 }
 
-export default App
+function ActiveTool() {
+  const { activeToolId, setActiveToolId } = useTool();
+  const component = TOOL_MAP[activeToolId];
+
+  if (component) {
+    return (
+      <Suspense fallback={<ToolFallback />}>
+        {component}
+      </Suspense>
+    );
+  }
+
+  return <Welcome onSelect={setActiveToolId} />;
+}
+
+function Welcome({ onSelect }: { onSelect: (id: string) => void }) {
+  return (
+    <div className="flex flex-col h-full">
+      <div className="mb-8 shrink-0">
+        <h1 className="text-2xl font-semibold text-white tracking-tight">Welcome to DevChest</h1>
+        <p className="text-sm text-neutral-600 mt-1.5">Pick a tool from the sidebar, or browse the full catalog below.</p>
+      </div>
+      <div className="flex-1 overflow-y-auto">
+        {CATEGORIES.map(category => {
+          const tools = TOOLS.filter(t => t.categoryId === category.id);
+          return (
+            <div key={category.id} className="mb-8">
+              <h2 className="text-[10px] font-semibold uppercase tracking-widest text-neutral-700 mb-3">
+                {category.name}
+              </h2>
+              <div className="grid grid-cols-3 gap-3">
+                {tools.map(tool => {
+                  const Icon = tool.icon;
+                  return (
+                    <button
+                      key={tool.id}
+                      type="button"
+                      onClick={() => onSelect(tool.id)}
+                      className="group flex items-start gap-3.5 p-4 rounded-2xl bg-[#2c2c2e]/60 backdrop-blur-xl border border-white/5 text-left hover:bg-white/[0.07] hover:border-white/10 transition-all"
+                    >
+                      <div className="w-8 h-8 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center shrink-0 group-hover:bg-blue-600/10 group-hover:border-blue-600/20 transition-all">
+                        <Icon className="w-4 h-4 text-neutral-600 group-hover:text-blue-400 transition-colors" />
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-sm font-medium text-neutral-300 group-hover:text-white transition-colors leading-snug">
+                          {tool.name}
+                        </p>
+                        <p className="text-[10px] text-neutral-700 mt-0.5 leading-relaxed line-clamp-2">
+                          {tool.description}
+                        </p>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <ToolProvider>
+      <div className="flex h-full overflow-hidden bg-[#1c1c1e] font-sans">
+        <Sidebar />
+        <main className="flex-1 overflow-y-auto">
+          <div className="h-full p-6">
+            <ActiveTool />
+          </div>
+        </main>
+      </div>
+    </ToolProvider>
+  );
+}
