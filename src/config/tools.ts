@@ -1,7 +1,7 @@
 import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
-  FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server,
+  FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe,
   Code2, Link, Key,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
@@ -118,6 +118,13 @@ export const TOOLS: Tool[] = [
     description: 'Format and normalize Nginx configuration files with consistent indentation',
     categoryId: 'formatters',
     icon: Server,
+  },
+  {
+    id: 'http-headers',
+    name: 'HTTP Headers Formatter',
+    description: 'Parse and format HTTP request and response headers — sort, normalize casing, table view',
+    categoryId: 'formatters',
+    icon: Globe,
   },
   {
     id: 'base64',

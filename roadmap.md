@@ -19,7 +19,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] INI / Config File Formatter
 - [x] Dockerfile Linter & Formatter
 - [x] Nginx Config Formatter
-- [ ] HTTP Headers Formatter
+- [x] HTTP Headers Formatter
 - [ ] Log Formatter (structured JSON logs → readable)
 
 ---

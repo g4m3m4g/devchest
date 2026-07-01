@@ -16,7 +16,8 @@ const CsvViewer        = lazy(() => import('./components/tools/formatters/CsvVie
 const GraphqlFormatter = lazy(() => import('./components/tools/formatters/GraphqlFormatter'));
 const IniFormatter         = lazy(() => import('./components/tools/formatters/IniFormatter'));
 const DockerfileFormatter  = lazy(() => import('./components/tools/formatters/DockerfileFormatter'));
-const NginxConfigFormatter = lazy(() => import('./components/tools/formatters/NginxConfigFormatter'));
+const NginxConfigFormatter  = lazy(() => import('./components/tools/formatters/NginxConfigFormatter'));
+const HttpHeadersFormatter  = lazy(() => import('./components/tools/formatters/HttpHeadersFormatter'));
 const Base64Tool       = lazy(() => import('./components/tools/encoders/Base64Tool'));
 const UrlEncoder       = lazy(() => import('./components/tools/encoders/UrlEncoder'));
 const JwtDecoder       = lazy(() => import('./components/tools/encoders/JwtDecoder'));
@@ -41,6 +42,7 @@ const TOOL_MAP: Record<string, React.ReactNode> = {
   'ini-formatter':        <IniFormatter />,
   'dockerfile-formatter':  <DockerfileFormatter />,
   'nginx-formatter':       <NginxConfigFormatter />,
+  'http-headers':          <HttpHeadersFormatter />,
   'base64':              <Base64Tool />,
   'url-encoder':         <UrlEncoder />,
   'jwt-decoder':         <JwtDecoder />,
