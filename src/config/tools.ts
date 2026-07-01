@@ -1,7 +1,7 @@
 import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
-  FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow,
+  FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2,
   Code2, Link, Key,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
@@ -97,6 +97,13 @@ export const TOOLS: Tool[] = [
     description: 'Format GraphQL schemas, queries, mutations, and fragments',
     categoryId: 'formatters',
     icon: Workflow,
+  },
+  {
+    id: 'ini-formatter',
+    name: 'INI Formatter',
+    description: 'Format INI and config files — normalize separators, sort sections and keys',
+    categoryId: 'formatters',
+    icon: Settings2,
   },
   {
     id: 'base64',
