@@ -14,7 +14,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] TOML Formatter / Converter (TOML ↔ JSON)
 - [x] JavaScript / TypeScript Formatter (Prettier-style)
 - [x] Markdown Preview & Formatter
-- [ ] CSV Formatter & Viewer
+- [x] CSV Formatter & Viewer
 - [ ] GraphQL Schema Formatter
 - [ ] INI / Config File Formatter
 - [ ] Dockerfile Linter & Formatter

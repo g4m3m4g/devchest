@@ -1,7 +1,7 @@
 import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
-  FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen,
+  FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2,
   Code2, Link, Key,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
@@ -76,6 +76,13 @@ export const TOOLS: Tool[] = [
     description: 'Format JavaScript and TypeScript using Prettier rules',
     categoryId: 'formatters',
     icon: FileJson,
+  },
+  {
+    id: 'csv-viewer',
+    name: 'CSV Formatter & Viewer',
+    description: 'Parse, view, and reformat CSV with configurable delimiters',
+    categoryId: 'formatters',
+    icon: Table2,
   },
   {
     id: 'markdown-preview',
