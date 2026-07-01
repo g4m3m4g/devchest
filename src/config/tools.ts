@@ -1,7 +1,7 @@
 import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
-  FileCode, AlignLeft, SlidersHorizontal, FileJson,
+  FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen,
   Code2, Link, Key,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
@@ -76,6 +76,13 @@ export const TOOLS: Tool[] = [
     description: 'Format JavaScript and TypeScript using Prettier rules',
     categoryId: 'formatters',
     icon: FileJson,
+  },
+  {
+    id: 'markdown-preview',
+    name: 'Markdown Preview',
+    description: 'Preview rendered Markdown or format and normalise its syntax',
+    categoryId: 'formatters',
+    icon: BookOpen,
   },
   {
     id: 'base64',

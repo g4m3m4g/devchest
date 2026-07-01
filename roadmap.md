@@ -13,7 +13,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] YAML Formatter / Converter (YAML ↔ JSON)
 - [x] TOML Formatter / Converter (TOML ↔ JSON)
 - [x] JavaScript / TypeScript Formatter (Prettier-style)
-- [ ] Markdown Preview & Formatter
+- [x] Markdown Preview & Formatter
 - [ ] CSV Formatter & Viewer
 - [ ] GraphQL Schema Formatter
 - [ ] INI / Config File Formatter

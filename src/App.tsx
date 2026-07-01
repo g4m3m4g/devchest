@@ -11,6 +11,7 @@ const XmlFormatter     = lazy(() => import('./components/tools/formatters/XmlFor
 const YamlConverter    = lazy(() => import('./components/tools/formatters/YamlConverter'));
 const TomlConverter    = lazy(() => import('./components/tools/formatters/TomlConverter'));
 const JsFormatter      = lazy(() => import('./components/tools/formatters/JsFormatter'));
+const MarkdownPreview  = lazy(() => import('./components/tools/formatters/MarkdownPreview'));
 const Base64Tool       = lazy(() => import('./components/tools/encoders/Base64Tool'));
 const UrlEncoder       = lazy(() => import('./components/tools/encoders/UrlEncoder'));
 const JwtDecoder       = lazy(() => import('./components/tools/encoders/JwtDecoder'));
@@ -29,6 +30,7 @@ const TOOL_MAP: Record<string, React.ReactNode> = {
   'yaml-converter':      <YamlConverter />,
   'toml-converter':      <TomlConverter />,
   'js-formatter':        <JsFormatter />,
+  'markdown-preview':    <MarkdownPreview />,
   'base64':              <Base64Tool />,
   'url-encoder':         <UrlEncoder />,
   'jwt-decoder':         <JwtDecoder />,
