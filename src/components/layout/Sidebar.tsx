@@ -51,7 +51,7 @@ export default function Sidebar({ collapsed, onToggleCollapse, mobileOpen, onClo
         ].join(' ')}>
           <div className="flex items-center gap-2.5">
             <img
-              src="/DevChest/DEVCHEST-LOGO.png"
+              src={`${import.meta.env.BASE_URL}DEVCHEST-LOGO.png`}
               alt="DevChest"
               className="w-7 h-7 rounded-lg shrink-0 object-cover"
             />
