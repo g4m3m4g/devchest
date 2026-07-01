@@ -10,6 +10,7 @@ const HtmlCssMinifier  = lazy(() => import('./components/tools/formatters/HtmlCs
 const XmlFormatter     = lazy(() => import('./components/tools/formatters/XmlFormatter'));
 const YamlConverter    = lazy(() => import('./components/tools/formatters/YamlConverter'));
 const TomlConverter    = lazy(() => import('./components/tools/formatters/TomlConverter'));
+const JsFormatter      = lazy(() => import('./components/tools/formatters/JsFormatter'));
 const Base64Tool       = lazy(() => import('./components/tools/encoders/Base64Tool'));
 const UrlEncoder       = lazy(() => import('./components/tools/encoders/UrlEncoder'));
 const JwtDecoder       = lazy(() => import('./components/tools/encoders/JwtDecoder'));
@@ -27,6 +28,7 @@ const TOOL_MAP: Record<string, React.ReactNode> = {
   'xml-formatter':       <XmlFormatter />,
   'yaml-converter':      <YamlConverter />,
   'toml-converter':      <TomlConverter />,
+  'js-formatter':        <JsFormatter />,
   'base64':              <Base64Tool />,
   'url-encoder':         <UrlEncoder />,
   'jwt-decoder':         <JwtDecoder />,
