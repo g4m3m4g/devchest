@@ -4,10 +4,10 @@
 
 <h1>DevChest</h1>
 
-<p>A fast, privacy-first developer utility hub.<br>18 tools, zero backend, everything runs in your browser.</p>
+<p>A fast, privacy-first developer utility hub.<br>24 tools, zero backend, everything runs in your browser.</p>
 
 [![Deploy](https://github.com/g4m3m4g/DevChest/actions/workflows/deploy.yml/badge.svg)](https://github.com/g4m3m4g/DevChest/actions/workflows/deploy.yml)
-![Tests](https://img.shields.io/badge/tests-423%20passing-22c55e?style=flat)
+![Tests](https://img.shields.io/badge/tests-678%20passing-22c55e?style=flat)
 ![React](https://img.shields.io/badge/React-19-61dafb?style=flat&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-6-3178c6?style=flat&logo=typescript&logoColor=white)
 ![Node](https://img.shields.io/badge/Node-%3E%3D22-339933?style=flat&logo=node.js&logoColor=white)
@@ -59,6 +59,12 @@ DevChest is an open-source collection of everyday developer utilities — format
 | **JS / TS Formatter** | Format JavaScript and TypeScript via Prettier (semi, quotes, indent, trailing commas) |
 | **Markdown Preview** | Live-render Markdown to HTML or normalise syntax via Prettier |
 | **CSV Formatter & Viewer** | Parse CSV into a sortable table; reformat with any delimiter |
+| **GraphQL Formatter** | Format GraphQL schemas, queries, mutations, and fragments |
+| **INI Formatter** | Format INI and config files — normalize separators, sort sections and keys |
+| **Dockerfile Formatter** | Format Dockerfiles and lint for common mistakes — deprecated instructions, missing tags, apt hygiene |
+| **Nginx Config Formatter** | Format and normalize Nginx configuration files with consistent indentation |
+| **HTTP Headers Formatter** | Parse and format HTTP request/response headers — sort, normalize casing, structured table view |
+| **Log Formatter** | Parse structured JSON logs (pino, winston, bunyan, logrus) — filter by level, toggle metadata |
 
 ### Encoders & Decoders
 
@@ -125,8 +131,10 @@ src/
 │   ├── layout/          # Sidebar (collapsible, responsive), ToolLayout
 │   └── tools/
 │       ├── encoders/    # Base64Tool, JwtDecoder, UrlEncoder
-│       ├── formatters/  # CsvViewer, HtmlCssMinifier, JsFormatter,
-│       │                # JsonFormatter, MarkdownPreview, SqlFormatter,
+│       ├── formatters/  # CsvViewer, DockerfileFormatter, GraphqlFormatter,
+│       │                # HtmlCssMinifier, HttpHeadersFormatter, IniFormatter,
+│       │                # JsFormatter, JsonFormatter, LogFormatter,
+│       │                # MarkdownPreview, NginxConfigFormatter, SqlFormatter,
 │       │                # TomlConverter, XmlFormatter, YamlConverter
 │       ├── generators/  # HashGenerator, TimestampConverter, UuidGenerator
 │       └── text/        # CaseConverter, DiffChecker, RegexTester
@@ -140,10 +148,16 @@ src/
 │   ├── base64.ts
 │   ├── cases.ts
 │   ├── csv.ts
+│   ├── dockerfile.ts
+│   ├── graphqlFormatter.ts
+│   ├── httpHeaders.ts
+│   ├── ini.ts
 │   ├── jsFormatter.ts
 │   ├── jwt.ts
+│   ├── logFormatter.ts
 │   ├── markdownFormatter.ts
 │   ├── minifiers.ts
+│   ├── nginxConfig.ts
 │   ├── regex.ts
 │   ├── timestamp.ts
 │   ├── toml.ts
@@ -151,7 +165,7 @@ src/
 │   ├── uuid.ts
 │   ├── xml.ts
 │   └── yaml.ts
-└── __tests__/           # 423 tests across 31 files
+└── __tests__/           # 678 tests across 45 files
     ├── components/      # Component integration tests
     ├── hooks/
     └── lib/             # Unit tests for utility modules
@@ -186,7 +200,7 @@ npm run test:run        # Single pass — run before every commit
 npm run test:coverage   # With V8 coverage report
 ```
 
-**423 tests, 0 failures** across 31 test files — every tool component and every lib module is covered.
+**678 tests, 0 failures** across 45 test files — every tool component and every lib module is covered.
 
 Notable patterns in the test suite:
 
