@@ -1,7 +1,7 @@
 import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
-  FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2,
+  FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow,
   Code2, Link, Key,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
@@ -90,6 +90,13 @@ export const TOOLS: Tool[] = [
     description: 'Preview rendered Markdown or format and normalise its syntax',
     categoryId: 'formatters',
     icon: BookOpen,
+  },
+  {
+    id: 'graphql-formatter',
+    name: 'GraphQL Formatter',
+    description: 'Format GraphQL schemas, queries, mutations, and fragments',
+    categoryId: 'formatters',
+    icon: Workflow,
   },
   {
     id: 'base64',

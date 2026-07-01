@@ -15,7 +15,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] JavaScript / TypeScript Formatter (Prettier-style)
 - [x] Markdown Preview & Formatter
 - [x] CSV Formatter & Viewer
-- [ ] GraphQL Schema Formatter
+- [x] GraphQL Schema Formatter
 - [ ] INI / Config File Formatter
 - [ ] Dockerfile Linter & Formatter
 - [ ] Nginx Config Formatter
