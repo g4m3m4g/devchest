@@ -16,6 +16,7 @@ const CsvViewer        = lazy(() => import('./components/tools/formatters/CsvVie
 const GraphqlFormatter = lazy(() => import('./components/tools/formatters/GraphqlFormatter'));
 const IniFormatter         = lazy(() => import('./components/tools/formatters/IniFormatter'));
 const DockerfileFormatter  = lazy(() => import('./components/tools/formatters/DockerfileFormatter'));
+const NginxConfigFormatter = lazy(() => import('./components/tools/formatters/NginxConfigFormatter'));
 const Base64Tool       = lazy(() => import('./components/tools/encoders/Base64Tool'));
 const UrlEncoder       = lazy(() => import('./components/tools/encoders/UrlEncoder'));
 const JwtDecoder       = lazy(() => import('./components/tools/encoders/JwtDecoder'));
@@ -38,7 +39,8 @@ const TOOL_MAP: Record<string, React.ReactNode> = {
   'markdown-preview':    <MarkdownPreview />,
   'graphql-formatter':   <GraphqlFormatter />,
   'ini-formatter':        <IniFormatter />,
-  'dockerfile-formatter': <DockerfileFormatter />,
+  'dockerfile-formatter':  <DockerfileFormatter />,
+  'nginx-formatter':       <NginxConfigFormatter />,
   'base64':              <Base64Tool />,
   'url-encoder':         <UrlEncoder />,
   'jwt-decoder':         <JwtDecoder />,

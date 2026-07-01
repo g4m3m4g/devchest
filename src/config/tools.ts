@@ -1,7 +1,7 @@
 import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
-  FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container,
+  FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server,
   Code2, Link, Key,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
@@ -111,6 +111,13 @@ export const TOOLS: Tool[] = [
     description: 'Format Dockerfiles and lint for common mistakes — deprecated instructions, missing version tags, apt hygiene',
     categoryId: 'formatters',
     icon: Container,
+  },
+  {
+    id: 'nginx-formatter',
+    name: 'Nginx Config Formatter',
+    description: 'Format and normalize Nginx configuration files with consistent indentation',
+    categoryId: 'formatters',
+    icon: Server,
   },
   {
     id: 'base64',
