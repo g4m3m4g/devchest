@@ -1,7 +1,7 @@
 import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
-  FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe,
+  FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
@@ -125,6 +125,13 @@ export const TOOLS: Tool[] = [
     description: 'Parse and format HTTP request and response headers — sort, normalize casing, table view',
     categoryId: 'formatters',
     icon: Globe,
+  },
+  {
+    id: 'log-formatter',
+    name: 'Log Formatter',
+    description: 'Parse structured JSON logs (pino, winston, bunyan) into a readable view — filter by level, toggle metadata',
+    categoryId: 'formatters',
+    icon: ScrollText,
   },
   {
     id: 'base64',

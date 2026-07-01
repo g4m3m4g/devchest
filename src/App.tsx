@@ -18,6 +18,7 @@ const IniFormatter         = lazy(() => import('./components/tools/formatters/In
 const DockerfileFormatter  = lazy(() => import('./components/tools/formatters/DockerfileFormatter'));
 const NginxConfigFormatter  = lazy(() => import('./components/tools/formatters/NginxConfigFormatter'));
 const HttpHeadersFormatter  = lazy(() => import('./components/tools/formatters/HttpHeadersFormatter'));
+const LogFormatter          = lazy(() => import('./components/tools/formatters/LogFormatter'));
 const Base64Tool       = lazy(() => import('./components/tools/encoders/Base64Tool'));
 const UrlEncoder       = lazy(() => import('./components/tools/encoders/UrlEncoder'));
 const JwtDecoder       = lazy(() => import('./components/tools/encoders/JwtDecoder'));
@@ -43,6 +44,7 @@ const TOOL_MAP: Record<string, React.ReactNode> = {
   'dockerfile-formatter':  <DockerfileFormatter />,
   'nginx-formatter':       <NginxConfigFormatter />,
   'http-headers':          <HttpHeadersFormatter />,
+  'log-formatter':         <LogFormatter />,
   'base64':              <Base64Tool />,
   'url-encoder':         <UrlEncoder />,
   'jwt-decoder':         <JwtDecoder />,

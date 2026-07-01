@@ -20,7 +20,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Dockerfile Linter & Formatter
 - [x] Nginx Config Formatter
 - [x] HTTP Headers Formatter
-- [ ] Log Formatter (structured JSON logs → readable)
+- [x] Log Formatter (structured JSON logs → readable)
 
 ---
 
