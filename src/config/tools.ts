@@ -1,6 +1,7 @@
 import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
+  FileCode, AlignLeft, SlidersHorizontal,
   Code2, Link, Key,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
@@ -47,6 +48,27 @@ export const TOOLS: Tool[] = [
     description: 'Strip spaces and comments from HTML and CSS payloads',
     categoryId: 'formatters',
     icon: Minimize2,
+  },
+  {
+    id: 'xml-formatter',
+    name: 'XML Formatter',
+    description: 'Pretty-print and validate XML with configurable indentation',
+    categoryId: 'formatters',
+    icon: FileCode,
+  },
+  {
+    id: 'yaml-converter',
+    name: 'YAML Converter',
+    description: 'Format YAML or convert between YAML and JSON',
+    categoryId: 'formatters',
+    icon: AlignLeft,
+  },
+  {
+    id: 'toml-converter',
+    name: 'TOML Converter',
+    description: 'Format TOML or convert between TOML and JSON',
+    categoryId: 'formatters',
+    icon: SlidersHorizontal,
   },
   {
     id: 'base64',
