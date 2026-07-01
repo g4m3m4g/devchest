@@ -1,4 +1,4 @@
-import { Search, Package, ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { Search, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { CATEGORIES, TOOLS } from '../../config/tools';
 import { useTool } from '../../context/ToolContext';
 
@@ -50,9 +50,11 @@ export default function Sidebar({ collapsed, onToggleCollapse, mobileOpen, onClo
           collapsed ? 'px-0 py-4 flex justify-center' : 'px-5 py-4 flex items-center justify-between',
         ].join(' ')}>
           <div className="flex items-center gap-2.5">
-            <div className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center shrink-0">
-              <Package className="w-4 h-4 text-white" />
-            </div>
+            <img
+              src={`${import.meta.env.BASE_URL}DEVCHEST-LOGO.png`}
+              alt="DevChest"
+              className="w-7 h-7 rounded-lg shrink-0 object-cover"
+            />
             {!collapsed && (
               <div>
                 <div className="text-sm font-semibold text-white tracking-tight leading-none">DevChest</div>
