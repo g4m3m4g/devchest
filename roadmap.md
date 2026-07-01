@@ -17,7 +17,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] CSV Formatter & Viewer
 - [x] GraphQL Schema Formatter
 - [x] INI / Config File Formatter
-- [ ] Dockerfile Linter & Formatter
+- [x] Dockerfile Linter & Formatter
 - [ ] Nginx Config Formatter
 - [ ] HTTP Headers Formatter
 - [ ] Log Formatter (structured JSON logs → readable)

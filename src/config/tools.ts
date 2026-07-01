@@ -1,7 +1,7 @@
 import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
-  FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2,
+  FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container,
   Code2, Link, Key,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
@@ -104,6 +104,13 @@ export const TOOLS: Tool[] = [
     description: 'Format INI and config files — normalize separators, sort sections and keys',
     categoryId: 'formatters',
     icon: Settings2,
+  },
+  {
+    id: 'dockerfile-formatter',
+    name: 'Dockerfile Formatter',
+    description: 'Format Dockerfiles and lint for common mistakes — deprecated instructions, missing version tags, apt hygiene',
+    categoryId: 'formatters',
+    icon: Container,
   },
   {
     id: 'base64',
