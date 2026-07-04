@@ -2,7 +2,7 @@ import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
-  Code2, Link, Key,
+  Code2, Link, Key, Ampersand,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
 } from 'lucide-react';
@@ -153,6 +153,13 @@ export const TOOLS: Tool[] = [
     description: 'Inspect JWT header, payload, and expiration client-side',
     categoryId: 'encoders',
     icon: Key,
+  },
+  {
+    id: 'html-entity-coder',
+    name: 'HTML Entity Encoder / Decoder',
+    description: 'Escape reserved HTML characters or decode named and numeric entities',
+    categoryId: 'encoders',
+    icon: Ampersand,
   },
   {
     id: 'regex-tester',
