@@ -22,6 +22,7 @@ const LogFormatter          = lazy(() => import('./components/tools/formatters/L
 const Base64Tool       = lazy(() => import('./components/tools/encoders/Base64Tool'));
 const UrlEncoder       = lazy(() => import('./components/tools/encoders/UrlEncoder'));
 const JwtDecoder       = lazy(() => import('./components/tools/encoders/JwtDecoder'));
+const HtmlEntityCoder  = lazy(() => import('./components/tools/encoders/HtmlEntityCoder'));
 const RegexTester      = lazy(() => import('./components/tools/text/RegexTester'));
 const CaseConverter    = lazy(() => import('./components/tools/text/CaseConverter'));
 const DiffChecker      = lazy(() => import('./components/tools/text/DiffChecker'));
@@ -48,6 +49,7 @@ const TOOL_MAP: Record<string, React.ReactNode> = {
   'base64':              <Base64Tool />,
   'url-encoder':         <UrlEncoder />,
   'jwt-decoder':         <JwtDecoder />,
+  'html-entity-coder':   <HtmlEntityCoder />,
   'regex-tester':        <RegexTester />,
   'case-converter':      <CaseConverter />,
   'diff-checker':        <DiffChecker />,
