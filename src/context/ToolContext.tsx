@@ -1,10 +1,7 @@
 import { createContext, useContext, useState, useRef, useEffect } from 'react';
 import type { RefObject } from 'react';
-import useLocalStorage from '../hooks/useLocalStorage';
 
 interface ToolContextType {
-  activeToolId: string;
-  setActiveToolId: (id: string) => void;
   searchQuery: string;
   setSearchQuery: (query: string) => void;
   searchInputRef: RefObject<HTMLInputElement | null>;
@@ -13,7 +10,6 @@ interface ToolContextType {
 const ToolContext = createContext<ToolContextType | null>(null);
 
 export function ToolProvider({ children }: { children: React.ReactNode }) {
-  const [activeToolId, setActiveToolId] = useLocalStorage<string>('devchest-active-tool', 'json-formatter');
   const [searchQuery, setSearchQuery] = useState('');
   const searchInputRef = useRef<HTMLInputElement>(null);
 
@@ -29,7 +25,7 @@ export function ToolProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <ToolContext value={{ activeToolId, setActiveToolId, searchQuery, setSearchQuery, searchInputRef }}>
+    <ToolContext value={{ searchQuery, setSearchQuery, searchInputRef }}>
       {children}
     </ToolContext>
   );

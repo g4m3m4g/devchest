@@ -1,3 +1,4 @@
+import { Link, useParams } from 'react-router';
 import { Search, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { CATEGORIES, TOOLS } from '../../config/tools';
 import { useTool } from '../../context/ToolContext';
@@ -10,7 +11,8 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ collapsed, onToggleCollapse, mobileOpen, onClose }: SidebarProps) {
-  const { activeToolId, setActiveToolId, searchQuery, setSearchQuery, searchInputRef } = useTool();
+  const { searchQuery, setSearchQuery, searchInputRef } = useTool();
+  const { toolId: activeToolId } = useParams<{ toolId: string }>();
 
   const filteredTools = searchQuery.trim()
     ? TOOLS.filter(t =>
@@ -18,11 +20,6 @@ export default function Sidebar({ collapsed, onToggleCollapse, mobileOpen, onClo
         t.description.toLowerCase().includes(searchQuery.toLowerCase())
       )
     : TOOLS;
-
-  function handleToolSelect(id: string) {
-    setActiveToolId(id);
-    onClose();
-  }
 
   return (
     <>
@@ -53,6 +50,8 @@ export default function Sidebar({ collapsed, onToggleCollapse, mobileOpen, onClo
             <img
               src={`${import.meta.env.BASE_URL}DEVCHEST-LOGO.png`}
               alt="DevChest"
+              width={28}
+              height={28}
               className="w-7 h-7 rounded-lg shrink-0 object-cover"
             />
             {!collapsed && (
@@ -102,11 +101,11 @@ export default function Sidebar({ collapsed, onToggleCollapse, mobileOpen, onClo
               const Icon = tool.icon;
               const isActive = activeToolId === tool.id;
               return (
-                <button
+                <Link
                   key={tool.id}
-                  type="button"
+                  to={`/tools/${tool.id}/`}
                   title={tool.name}
-                  onClick={() => handleToolSelect(tool.id)}
+                  onClick={onClose}
                   className={[
                     'w-full flex items-center justify-center p-2.5 rounded-lg mb-0.5 transition-all',
                     isActive
@@ -115,7 +114,7 @@ export default function Sidebar({ collapsed, onToggleCollapse, mobileOpen, onClo
                   ].join(' ')}
                 >
                   <Icon className="w-4 h-4 shrink-0" />
-                </button>
+                </Link>
               );
             })
           ) : (
@@ -134,9 +133,9 @@ export default function Sidebar({ collapsed, onToggleCollapse, mobileOpen, onClo
                         const isActive = activeToolId === tool.id;
                         return (
                           <li key={tool.id}>
-                            <button
-                              type="button"
-                              onClick={() => handleToolSelect(tool.id)}
+                            <Link
+                              to={`/tools/${tool.id}/`}
+                              onClick={onClose}
                               className={[
                                 'w-full flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-left transition-all group',
                                 isActive
@@ -154,7 +153,7 @@ export default function Sidebar({ collapsed, onToggleCollapse, mobileOpen, onClo
                               {isActive && (
                                 <span className="ml-auto w-1 h-1 rounded-full bg-blue-400 shrink-0" />
                               )}
-                            </button>
+                            </Link>
                           </li>
                         );
                       })}
