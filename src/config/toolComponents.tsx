@@ -22,6 +22,7 @@ const JwtDecoder       = lazy(() => import('../components/tools/encoders/JwtDeco
 const HtmlEntityCoder  = lazy(() => import('../components/tools/encoders/HtmlEntityCoder'));
 const UnicodeEscapeCoder = lazy(() => import('../components/tools/encoders/UnicodeEscapeCoder'));
 const HexCoder         = lazy(() => import('../components/tools/encoders/HexCoder'));
+const NumberBaseConverter = lazy(() => import('../components/tools/encoders/NumberBaseConverter'));
 const RegexTester      = lazy(() => import('../components/tools/text/RegexTester'));
 const CaseConverter    = lazy(() => import('../components/tools/text/CaseConverter'));
 const DiffChecker      = lazy(() => import('../components/tools/text/DiffChecker'));
@@ -51,6 +52,7 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'html-entity-coder':   <HtmlEntityCoder />,
   'unicode-escape-coder': <UnicodeEscapeCoder />,
   'hex-coder':           <HexCoder />,
+  'number-base-converter': <NumberBaseConverter />,
   'regex-tester':        <RegexTester />,
   'case-converter':      <CaseConverter />,
   'diff-checker':        <DiffChecker />,

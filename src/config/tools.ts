@@ -2,7 +2,7 @@ import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
-  Code2, Link, Key, Ampersand, Binary, Hexagon,
+  Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
 } from 'lucide-react';
@@ -174,6 +174,13 @@ export const TOOLS: Tool[] = [
     description: 'Convert text to its UTF-8 hexadecimal byte representation and back',
     categoryId: 'encoders',
     icon: Hexagon,
+  },
+  {
+    id: 'number-base-converter',
+    name: 'Number Base Converter',
+    description: 'Convert integers between binary, octal, decimal, and hexadecimal',
+    categoryId: 'encoders',
+    icon: Calculator,
   },
   {
     id: 'regex-tester',
