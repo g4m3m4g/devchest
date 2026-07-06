@@ -29,10 +29,10 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Base64 Encoder / Decoder
 - [x] URL Encoder / Decoder
 - [x] JWT Decoder
-- [ ] HTML Entity Encoder / Decoder
-- [ ] Unicode Encoder / Decoder (escape sequences ↔ text)
-- [ ] Hex Encoder / Decoder
-- [ ] Binary / Octal / Decimal / Hex Number Converter
+- [x] HTML Entity Encoder / Decoder
+- [x] Unicode Encoder / Decoder (escape sequences ↔ text)
+- [x] Hex Encoder / Decoder
+- [x] Binary / Octal / Decimal / Hex Number Converter
 - [ ] Morse Code Encoder / Decoder
 - [ ] Punycode / IDN Encoder / Decoder
 - [ ] Quoted-Printable Encoder / Decoder
