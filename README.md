@@ -4,10 +4,10 @@
 
 <h1>DevChest</h1>
 
-<p>A fast, privacy-first developer utility hub.<br>24 tools, zero backend, everything runs in your browser.</p>
+<p>A fast, privacy-first developer utility hub.<br>25 tools, zero backend, everything runs in your browser.</p>
 
 [![Deploy](https://github.com/g4m3m4g/DevChest/actions/workflows/deploy.yml/badge.svg)](https://github.com/g4m3m4g/DevChest/actions/workflows/deploy.yml)
-![Tests](https://img.shields.io/badge/tests-678%20passing-22c55e?style=flat)
+![Tests](https://img.shields.io/badge/tests-750%20passing-22c55e?style=flat)
 ![React](https://img.shields.io/badge/React-19-61dafb?style=flat&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-6-3178c6?style=flat&logo=typescript&logoColor=white)
 ![Node](https://img.shields.io/badge/Node-%3E%3D22-339933?style=flat&logo=node.js&logoColor=white)
@@ -165,7 +165,7 @@ src/
 │   ├── uuid.ts
 │   ├── xml.ts
 │   └── yaml.ts
-└── __tests__/           # 678 tests across 45 files
+└── __tests__/           # 750 tests across 52 files
     ├── components/      # Component integration tests
     ├── hooks/
     └── lib/             # Unit tests for utility modules
@@ -200,7 +200,7 @@ npm run test:run        # Single pass — run before every commit
 npm run test:coverage   # With V8 coverage report
 ```
 
-**678 tests, 0 failures** across 45 test files — every tool component and every lib module is covered.
+**750 tests, 0 failures** across 52 test files — every tool component and every lib module is covered.
 
 Notable patterns in the test suite:
 

@@ -20,6 +20,7 @@ const Base64Tool       = lazy(() => import('../components/tools/encoders/Base64T
 const UrlEncoder       = lazy(() => import('../components/tools/encoders/UrlEncoder'));
 const JwtDecoder       = lazy(() => import('../components/tools/encoders/JwtDecoder'));
 const HtmlEntityCoder  = lazy(() => import('../components/tools/encoders/HtmlEntityCoder'));
+const UnicodeEscapeCoder = lazy(() => import('../components/tools/encoders/UnicodeEscapeCoder'));
 const RegexTester      = lazy(() => import('../components/tools/text/RegexTester'));
 const CaseConverter    = lazy(() => import('../components/tools/text/CaseConverter'));
 const DiffChecker      = lazy(() => import('../components/tools/text/DiffChecker'));
@@ -47,6 +48,7 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'url-encoder':         <UrlEncoder />,
   'jwt-decoder':         <JwtDecoder />,
   'html-entity-coder':   <HtmlEntityCoder />,
+  'unicode-escape-coder': <UnicodeEscapeCoder />,
   'regex-tester':        <RegexTester />,
   'case-converter':      <CaseConverter />,
   'diff-checker':        <DiffChecker />,

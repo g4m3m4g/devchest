@@ -2,7 +2,7 @@ import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
-  Code2, Link, Key, Ampersand,
+  Code2, Link, Key, Ampersand, Binary,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
 } from 'lucide-react';
@@ -160,6 +160,13 @@ export const TOOLS: Tool[] = [
     description: 'Escape reserved HTML characters or decode named and numeric entities',
     categoryId: 'encoders',
     icon: Ampersand,
+  },
+  {
+    id: 'unicode-escape-coder',
+    name: 'Unicode Encoder / Decoder',
+    description: 'Convert text to Unicode escape sequences (JS, CSS, Python, U+ notation) and back',
+    categoryId: 'encoders',
+    icon: Binary,
   },
   {
     id: 'regex-tester',
