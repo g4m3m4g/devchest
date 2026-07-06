@@ -31,7 +31,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] JWT Decoder
 - [x] HTML Entity Encoder / Decoder
 - [x] Unicode Encoder / Decoder (escape sequences ↔ text)
-- [ ] Hex Encoder / Decoder
+- [x] Hex Encoder / Decoder
 - [ ] Binary / Octal / Decimal / Hex Number Converter
 - [ ] Morse Code Encoder / Decoder
 - [ ] Punycode / IDN Encoder / Decoder

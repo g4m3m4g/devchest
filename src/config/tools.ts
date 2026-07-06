@@ -2,7 +2,7 @@ import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
-  Code2, Link, Key, Ampersand, Binary,
+  Code2, Link, Key, Ampersand, Binary, Hexagon,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
 } from 'lucide-react';
@@ -167,6 +167,13 @@ export const TOOLS: Tool[] = [
     description: 'Convert text to Unicode escape sequences (JS, CSS, Python, U+ notation) and back',
     categoryId: 'encoders',
     icon: Binary,
+  },
+  {
+    id: 'hex-coder',
+    name: 'Hex Encoder / Decoder',
+    description: 'Convert text to its UTF-8 hexadecimal byte representation and back',
+    categoryId: 'encoders',
+    icon: Hexagon,
   },
   {
     id: 'regex-tester',
