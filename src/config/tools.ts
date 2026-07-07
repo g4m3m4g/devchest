@@ -2,7 +2,7 @@ import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
-  Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio,
+  Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
 } from 'lucide-react';
@@ -188,6 +188,13 @@ export const TOOLS: Tool[] = [
     description: 'Convert text to Morse code and back, with word separators',
     categoryId: 'encoders',
     icon: Radio,
+  },
+  {
+    id: 'punycode-coder',
+    name: 'Punycode / IDN Encoder / Decoder',
+    description: 'Convert internationalized domain names to Punycode ASCII form and back',
+    categoryId: 'encoders',
+    icon: Languages,
   },
   {
     id: 'regex-tester',

@@ -24,6 +24,7 @@ const UnicodeEscapeCoder = lazy(() => import('../components/tools/encoders/Unico
 const HexCoder         = lazy(() => import('../components/tools/encoders/HexCoder'));
 const NumberBaseConverter = lazy(() => import('../components/tools/encoders/NumberBaseConverter'));
 const MorseCoder       = lazy(() => import('../components/tools/encoders/MorseCoder'));
+const PunycodeCoder    = lazy(() => import('../components/tools/encoders/PunycodeCoder'));
 const RegexTester      = lazy(() => import('../components/tools/text/RegexTester'));
 const CaseConverter    = lazy(() => import('../components/tools/text/CaseConverter'));
 const DiffChecker      = lazy(() => import('../components/tools/text/DiffChecker'));
@@ -55,6 +56,7 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'hex-coder':           <HexCoder />,
   'number-base-converter': <NumberBaseConverter />,
   'morse-coder':         <MorseCoder />,
+  'punycode-coder':      <PunycodeCoder />,
   'regex-tester':        <RegexTester />,
   'case-converter':      <CaseConverter />,
   'diff-checker':        <DiffChecker />,

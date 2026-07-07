@@ -34,7 +34,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Hex Encoder / Decoder
 - [x] Binary / Octal / Decimal / Hex Number Converter
 - [x] Morse Code Encoder / Decoder
-- [ ] Punycode / IDN Encoder / Decoder
+- [x] Punycode / IDN Encoder / Decoder
 - [ ] Quoted-Printable Encoder / Decoder
 - [ ] Caesar Cipher / ROT-13
 - [ ] Gzip / Deflate Compress & Decompress (in-browser)
