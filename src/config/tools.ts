@@ -2,7 +2,7 @@ import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
-  Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle,
+  Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
 } from 'lucide-react';
@@ -209,6 +209,13 @@ export const TOOLS: Tool[] = [
     description: 'Shift letters by a configurable amount, with a ROT-13 preset',
     categoryId: 'encoders',
     icon: Shuffle,
+  },
+  {
+    id: 'gzip-deflate',
+    name: 'Gzip / Deflate Compress & Decompress',
+    description: 'Compress and decompress text with Gzip or Deflate entirely in the browser',
+    categoryId: 'encoders',
+    icon: FileArchive,
   },
   {
     id: 'regex-tester',

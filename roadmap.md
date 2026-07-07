@@ -37,7 +37,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Punycode / IDN Encoder / Decoder
 - [x] Quoted-Printable Encoder / Decoder
 - [x] Caesar Cipher / ROT-13
-- [ ] Gzip / Deflate Compress & Decompress (in-browser)
+- [x] Gzip / Deflate Compress & Decompress (in-browser)
 - [ ] JWT Builder (sign HS256 tokens)
 - [ ] MIME Type Lookup
 - [ ] Data URL ↔ File Converter
