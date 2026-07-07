@@ -2,7 +2,7 @@ import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
-  Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator,
+  Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
 } from 'lucide-react';
@@ -181,6 +181,13 @@ export const TOOLS: Tool[] = [
     description: 'Convert integers between binary, octal, decimal, and hexadecimal',
     categoryId: 'encoders',
     icon: Calculator,
+  },
+  {
+    id: 'morse-coder',
+    name: 'Morse Code Encoder / Decoder',
+    description: 'Convert text to Morse code and back, with word separators',
+    categoryId: 'encoders',
+    icon: Radio,
   },
   {
     id: 'regex-tester',
