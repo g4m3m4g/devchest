@@ -2,7 +2,7 @@ import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
-  Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail,
+  Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
 } from 'lucide-react';
@@ -202,6 +202,13 @@ export const TOOLS: Tool[] = [
     description: 'Convert text to Quoted-Printable (RFC 2045) encoding and back',
     categoryId: 'encoders',
     icon: Mail,
+  },
+  {
+    id: 'caesar-cipher',
+    name: 'Caesar Cipher / ROT-13',
+    description: 'Shift letters by a configurable amount, with a ROT-13 preset',
+    categoryId: 'encoders',
+    icon: Shuffle,
   },
   {
     id: 'regex-tester',

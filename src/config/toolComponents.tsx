@@ -26,6 +26,7 @@ const NumberBaseConverter = lazy(() => import('../components/tools/encoders/Numb
 const MorseCoder       = lazy(() => import('../components/tools/encoders/MorseCoder'));
 const PunycodeCoder    = lazy(() => import('../components/tools/encoders/PunycodeCoder'));
 const QuotedPrintableCoder = lazy(() => import('../components/tools/encoders/QuotedPrintableCoder'));
+const CaesarCipherTool = lazy(() => import('../components/tools/encoders/CaesarCipherTool'));
 const RegexTester      = lazy(() => import('../components/tools/text/RegexTester'));
 const CaseConverter    = lazy(() => import('../components/tools/text/CaseConverter'));
 const DiffChecker      = lazy(() => import('../components/tools/text/DiffChecker'));
@@ -59,6 +60,7 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'morse-coder':         <MorseCoder />,
   'punycode-coder':      <PunycodeCoder />,
   'quoted-printable-coder': <QuotedPrintableCoder />,
+  'caesar-cipher':       <CaesarCipherTool />,
   'regex-tester':        <RegexTester />,
   'case-converter':      <CaseConverter />,
   'diff-checker':        <DiffChecker />,

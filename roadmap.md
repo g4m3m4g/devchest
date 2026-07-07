@@ -36,7 +36,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Morse Code Encoder / Decoder
 - [x] Punycode / IDN Encoder / Decoder
 - [x] Quoted-Printable Encoder / Decoder
-- [ ] Caesar Cipher / ROT-13
+- [x] Caesar Cipher / ROT-13
 - [ ] Gzip / Deflate Compress & Decompress (in-browser)
 - [ ] JWT Builder (sign HS256 tokens)
 - [ ] MIME Type Lookup
