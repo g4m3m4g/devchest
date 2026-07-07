@@ -33,13 +33,13 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Unicode Encoder / Decoder (escape sequences ↔ text)
 - [x] Hex Encoder / Decoder
 - [x] Binary / Octal / Decimal / Hex Number Converter
-- [ ] Morse Code Encoder / Decoder
-- [ ] Punycode / IDN Encoder / Decoder
-- [ ] Quoted-Printable Encoder / Decoder
-- [ ] Caesar Cipher / ROT-13
-- [ ] Gzip / Deflate Compress & Decompress (in-browser)
-- [ ] JWT Builder (sign HS256 tokens)
-- [ ] MIME Type Lookup
+- [x] Morse Code Encoder / Decoder
+- [x] Punycode / IDN Encoder / Decoder
+- [x] Quoted-Printable Encoder / Decoder
+- [x] Caesar Cipher / ROT-13
+- [x] Gzip / Deflate Compress & Decompress (in-browser)
+- [x] JWT Builder (sign HS256 tokens)
+- [x] MIME Type Lookup
 - [ ] Data URL ↔ File Converter
 
 ---

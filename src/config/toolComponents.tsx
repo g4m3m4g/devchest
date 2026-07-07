@@ -23,6 +23,13 @@ const HtmlEntityCoder  = lazy(() => import('../components/tools/encoders/HtmlEnt
 const UnicodeEscapeCoder = lazy(() => import('../components/tools/encoders/UnicodeEscapeCoder'));
 const HexCoder         = lazy(() => import('../components/tools/encoders/HexCoder'));
 const NumberBaseConverter = lazy(() => import('../components/tools/encoders/NumberBaseConverter'));
+const MorseCoder       = lazy(() => import('../components/tools/encoders/MorseCoder'));
+const PunycodeCoder    = lazy(() => import('../components/tools/encoders/PunycodeCoder'));
+const QuotedPrintableCoder = lazy(() => import('../components/tools/encoders/QuotedPrintableCoder'));
+const CaesarCipherTool = lazy(() => import('../components/tools/encoders/CaesarCipherTool'));
+const GzipDeflateTool  = lazy(() => import('../components/tools/encoders/GzipDeflateTool'));
+const JwtBuilder       = lazy(() => import('../components/tools/encoders/JwtBuilder'));
+const MimeTypeLookup   = lazy(() => import('../components/tools/encoders/MimeTypeLookup'));
 const RegexTester      = lazy(() => import('../components/tools/text/RegexTester'));
 const CaseConverter    = lazy(() => import('../components/tools/text/CaseConverter'));
 const DiffChecker      = lazy(() => import('../components/tools/text/DiffChecker'));
@@ -53,6 +60,13 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'unicode-escape-coder': <UnicodeEscapeCoder />,
   'hex-coder':           <HexCoder />,
   'number-base-converter': <NumberBaseConverter />,
+  'morse-coder':         <MorseCoder />,
+  'punycode-coder':      <PunycodeCoder />,
+  'quoted-printable-coder': <QuotedPrintableCoder />,
+  'caesar-cipher':       <CaesarCipherTool />,
+  'gzip-deflate':        <GzipDeflateTool />,
+  'jwt-builder':         <JwtBuilder />,
+  'mime-type-lookup':    <MimeTypeLookup />,
   'regex-tester':        <RegexTester />,
   'case-converter':      <CaseConverter />,
   'diff-checker':        <DiffChecker />,
