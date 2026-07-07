@@ -2,7 +2,7 @@ import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
-  Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages,
+  Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
 } from 'lucide-react';
@@ -195,6 +195,13 @@ export const TOOLS: Tool[] = [
     description: 'Convert internationalized domain names to Punycode ASCII form and back',
     categoryId: 'encoders',
     icon: Languages,
+  },
+  {
+    id: 'quoted-printable-coder',
+    name: 'Quoted-Printable Encoder / Decoder',
+    description: 'Convert text to Quoted-Printable (RFC 2045) encoding and back',
+    categoryId: 'encoders',
+    icon: Mail,
   },
   {
     id: 'regex-tester',
