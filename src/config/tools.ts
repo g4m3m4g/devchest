@@ -2,7 +2,7 @@ import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
-  Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature,
+  Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
 } from 'lucide-react';
@@ -223,6 +223,13 @@ export const TOOLS: Tool[] = [
     description: 'Build and sign JSON Web Tokens with HMAC-SHA256',
     categoryId: 'encoders',
     icon: Signature,
+  },
+  {
+    id: 'mime-type-lookup',
+    name: 'MIME Type Lookup',
+    description: 'Look up MIME types by file extension, filename, or find extensions for a MIME type',
+    categoryId: 'encoders',
+    icon: FileSearch,
   },
   {
     id: 'regex-tester',
