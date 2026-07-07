@@ -2,7 +2,7 @@ import type { LucideIcon } from 'lucide-react';
 import {
   Braces, Database, Minimize2,
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
-  Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive,
+  Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock,
 } from 'lucide-react';
@@ -216,6 +216,13 @@ export const TOOLS: Tool[] = [
     description: 'Compress and decompress text with Gzip or Deflate entirely in the browser',
     categoryId: 'encoders',
     icon: FileArchive,
+  },
+  {
+    id: 'jwt-builder',
+    name: 'JWT Builder',
+    description: 'Build and sign JSON Web Tokens with HMAC-SHA256',
+    categoryId: 'encoders',
+    icon: Signature,
   },
   {
     id: 'regex-tester',

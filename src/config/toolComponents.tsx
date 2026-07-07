@@ -28,6 +28,7 @@ const PunycodeCoder    = lazy(() => import('../components/tools/encoders/Punycod
 const QuotedPrintableCoder = lazy(() => import('../components/tools/encoders/QuotedPrintableCoder'));
 const CaesarCipherTool = lazy(() => import('../components/tools/encoders/CaesarCipherTool'));
 const GzipDeflateTool  = lazy(() => import('../components/tools/encoders/GzipDeflateTool'));
+const JwtBuilder       = lazy(() => import('../components/tools/encoders/JwtBuilder'));
 const RegexTester      = lazy(() => import('../components/tools/text/RegexTester'));
 const CaseConverter    = lazy(() => import('../components/tools/text/CaseConverter'));
 const DiffChecker      = lazy(() => import('../components/tools/text/DiffChecker'));
@@ -63,6 +64,7 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'quoted-printable-coder': <QuotedPrintableCoder />,
   'caesar-cipher':       <CaesarCipherTool />,
   'gzip-deflate':        <GzipDeflateTool />,
+  'jwt-builder':         <JwtBuilder />,
   'regex-tester':        <RegexTester />,
   'case-converter':      <CaseConverter />,
   'diff-checker':        <DiffChecker />,
