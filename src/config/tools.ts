@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock,
+  Hash, Fingerprint, Clock, FileUp,
 } from 'lucide-react';
 
 export interface Tool {
@@ -230,6 +230,13 @@ export const TOOLS: Tool[] = [
     description: 'Look up MIME types by file extension, filename, or find extensions for a MIME type',
     categoryId: 'encoders',
     icon: FileSearch,
+  },
+  {
+    id: 'data-url-file-converter',
+    name: 'Data URL ↔ File Converter',
+    description: 'Convert a file to a Data URL, or decode a Data URL back into a downloadable file',
+    categoryId: 'encoders',
+    icon: FileUp,
   },
   {
     id: 'regex-tester',

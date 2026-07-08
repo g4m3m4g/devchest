@@ -40,7 +40,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Gzip / Deflate Compress & Decompress (in-browser)
 - [x] JWT Builder (sign HS256 tokens)
 - [x] MIME Type Lookup
-- [ ] Data URL ↔ File Converter
+- [x] Data URL ↔ File Converter
 
 ---
 

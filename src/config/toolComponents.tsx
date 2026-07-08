@@ -30,6 +30,7 @@ const CaesarCipherTool = lazy(() => import('../components/tools/encoders/CaesarC
 const GzipDeflateTool  = lazy(() => import('../components/tools/encoders/GzipDeflateTool'));
 const JwtBuilder       = lazy(() => import('../components/tools/encoders/JwtBuilder'));
 const MimeTypeLookup   = lazy(() => import('../components/tools/encoders/MimeTypeLookup'));
+const DataUrlFileConverter = lazy(() => import('../components/tools/encoders/DataUrlFileConverter'));
 const RegexTester      = lazy(() => import('../components/tools/text/RegexTester'));
 const CaseConverter    = lazy(() => import('../components/tools/text/CaseConverter'));
 const DiffChecker      = lazy(() => import('../components/tools/text/DiffChecker'));
@@ -67,6 +68,7 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'gzip-deflate':        <GzipDeflateTool />,
   'jwt-builder':         <JwtBuilder />,
   'mime-type-lookup':    <MimeTypeLookup />,
+  'data-url-file-converter': <DataUrlFileConverter />,
   'regex-tester':        <RegexTester />,
   'case-converter':      <CaseConverter />,
   'diff-checker':        <DiffChecker />,
