@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ,
+  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2,
 } from 'lucide-react';
 
 export interface Tool {
@@ -279,6 +279,13 @@ export const TOOLS: Tool[] = [
     description: 'Sort lines alphabetically, numerically, or by length — with dedup and cleanup options',
     categoryId: 'text',
     icon: ArrowUpAZ,
+  },
+  {
+    id: 'text-reverse',
+    name: 'Text Reverse',
+    description: 'Reverse text by character, word, or line order',
+    categoryId: 'text',
+    icon: FlipHorizontal2,
   },
   {
     id: 'hash-generator',

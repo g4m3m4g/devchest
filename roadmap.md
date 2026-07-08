@@ -52,7 +52,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Word & Character Counter
 - [x] Lorem Ipsum Generator
 - [x] Text Sorter (alphabetical, numeric, by length, dedup)
-- [ ] Text Reverse
+- [x] Text Reverse
 - [ ] Slug Generator
 - [ ] Whitespace / Line Cleaner (trim, collapse, strip blank lines)
 - [ ] String Escape / Unescape (JS, Python, SQL strings)
