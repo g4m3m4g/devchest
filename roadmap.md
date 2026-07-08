@@ -40,7 +40,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Gzip / Deflate Compress & Decompress (in-browser)
 - [x] JWT Builder (sign HS256 tokens)
 - [x] MIME Type Lookup
-- [ ] Data URL ↔ File Converter
+- [x] Data URL ↔ File Converter
 
 ---
 
@@ -49,11 +49,11 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Regex Tester
 - [x] Case Converter
 - [x] Diff Checker
-- [ ] Word & Character Counter
-- [ ] Lorem Ipsum Generator
-- [ ] Text Sorter (alphabetical, numeric, by length, dedup)
-- [ ] Text Reverse
-- [ ] Slug Generator
+- [x] Word & Character Counter
+- [x] Lorem Ipsum Generator
+- [x] Text Sorter (alphabetical, numeric, by length, dedup)
+- [x] Text Reverse
+- [x] Slug Generator
 - [ ] Whitespace / Line Cleaner (trim, collapse, strip blank lines)
 - [ ] String Escape / Unescape (JS, Python, SQL strings)
 - [ ] Find & Replace (plain + regex, with capture group substitution)

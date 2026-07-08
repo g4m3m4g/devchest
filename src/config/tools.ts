@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock,
+  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2,
 } from 'lucide-react';
 
 export interface Tool {
@@ -232,6 +232,13 @@ export const TOOLS: Tool[] = [
     icon: FileSearch,
   },
   {
+    id: 'data-url-file-converter',
+    name: 'Data URL ↔ File Converter',
+    description: 'Convert a file to a Data URL, or decode a Data URL back into a downloadable file',
+    categoryId: 'encoders',
+    icon: FileUp,
+  },
+  {
     id: 'regex-tester',
     name: 'Regex Tester',
     description: 'Test regular expressions with live match highlighting',
@@ -251,6 +258,41 @@ export const TOOLS: Tool[] = [
     description: 'Compare two text blocks and visualize line differences',
     categoryId: 'text',
     icon: ArrowLeftRight,
+  },
+  {
+    id: 'word-char-counter',
+    name: 'Word & Character Counter',
+    description: 'Count words, characters, sentences, paragraphs, and lines as you type',
+    categoryId: 'text',
+    icon: AlignJustify,
+  },
+  {
+    id: 'lorem-ipsum-generator',
+    name: 'Lorem Ipsum Generator',
+    description: 'Generate placeholder text by words, sentences, or paragraphs',
+    categoryId: 'text',
+    icon: WholeWord,
+  },
+  {
+    id: 'text-sorter',
+    name: 'Text Sorter',
+    description: 'Sort lines alphabetically, numerically, or by length — with dedup and cleanup options',
+    categoryId: 'text',
+    icon: ArrowUpAZ,
+  },
+  {
+    id: 'text-reverse',
+    name: 'Text Reverse',
+    description: 'Reverse text by character, word, or line order',
+    categoryId: 'text',
+    icon: FlipHorizontal2,
+  },
+  {
+    id: 'slug-generator',
+    name: 'Slug Generator',
+    description: 'Turn a title into a clean, URL-safe slug',
+    categoryId: 'text',
+    icon: Link2,
   },
   {
     id: 'hash-generator',
