@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2,
+  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2,
 } from 'lucide-react';
 
 export interface Tool {
@@ -286,6 +286,13 @@ export const TOOLS: Tool[] = [
     description: 'Reverse text by character, word, or line order',
     categoryId: 'text',
     icon: FlipHorizontal2,
+  },
+  {
+    id: 'slug-generator',
+    name: 'Slug Generator',
+    description: 'Turn a title into a clean, URL-safe slug',
+    categoryId: 'text',
+    icon: Link2,
   },
   {
     id: 'hash-generator',

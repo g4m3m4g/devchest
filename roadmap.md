@@ -53,7 +53,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Lorem Ipsum Generator
 - [x] Text Sorter (alphabetical, numeric, by length, dedup)
 - [x] Text Reverse
-- [ ] Slug Generator
+- [x] Slug Generator
 - [ ] Whitespace / Line Cleaner (trim, collapse, strip blank lines)
 - [ ] String Escape / Unescape (JS, Python, SQL strings)
 - [ ] Find & Replace (plain + regex, with capture group substitution)
