@@ -34,6 +34,7 @@ const DataUrlFileConverter = lazy(() => import('../components/tools/encoders/Dat
 const RegexTester      = lazy(() => import('../components/tools/text/RegexTester'));
 const CaseConverter    = lazy(() => import('../components/tools/text/CaseConverter'));
 const DiffChecker      = lazy(() => import('../components/tools/text/DiffChecker'));
+const WordCharCounter  = lazy(() => import('../components/tools/text/WordCharCounter'));
 const HashGenerator    = lazy(() => import('../components/tools/generators/HashGenerator'));
 const UuidGenerator    = lazy(() => import('../components/tools/generators/UuidGenerator'));
 const TimestampConverter = lazy(() => import('../components/tools/generators/TimestampConverter'));
@@ -72,6 +73,7 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'regex-tester':        <RegexTester />,
   'case-converter':      <CaseConverter />,
   'diff-checker':        <DiffChecker />,
+  'word-char-counter':   <WordCharCounter />,
   'hash-generator':      <HashGenerator />,
   'uuid-generator':      <UuidGenerator />,
   'timestamp-converter': <TimestampConverter />,

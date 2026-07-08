@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock, FileUp,
+  Hash, Fingerprint, Clock, FileUp, AlignJustify,
 } from 'lucide-react';
 
 export interface Tool {
@@ -258,6 +258,13 @@ export const TOOLS: Tool[] = [
     description: 'Compare two text blocks and visualize line differences',
     categoryId: 'text',
     icon: ArrowLeftRight,
+  },
+  {
+    id: 'word-char-counter',
+    name: 'Word & Character Counter',
+    description: 'Count words, characters, sentences, paragraphs, and lines as you type',
+    categoryId: 'text',
+    icon: AlignJustify,
   },
   {
     id: 'hash-generator',

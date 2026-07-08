@@ -49,7 +49,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Regex Tester
 - [x] Case Converter
 - [x] Diff Checker
-- [ ] Word & Character Counter
+- [x] Word & Character Counter
 - [ ] Lorem Ipsum Generator
 - [ ] Text Sorter (alphabetical, numeric, by length, dedup)
 - [ ] Text Reverse
