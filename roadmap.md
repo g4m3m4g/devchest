@@ -50,7 +50,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Case Converter
 - [x] Diff Checker
 - [x] Word & Character Counter
-- [ ] Lorem Ipsum Generator
+- [x] Lorem Ipsum Generator
 - [ ] Text Sorter (alphabetical, numeric, by length, dedup)
 - [ ] Text Reverse
 - [ ] Slug Generator

@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock, FileUp, AlignJustify,
+  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord,
 } from 'lucide-react';
 
 export interface Tool {
@@ -265,6 +265,13 @@ export const TOOLS: Tool[] = [
     description: 'Count words, characters, sentences, paragraphs, and lines as you type',
     categoryId: 'text',
     icon: AlignJustify,
+  },
+  {
+    id: 'lorem-ipsum-generator',
+    name: 'Lorem Ipsum Generator',
+    description: 'Generate placeholder text by words, sentences, or paragraphs',
+    categoryId: 'text',
+    icon: WholeWord,
   },
   {
     id: 'hash-generator',
