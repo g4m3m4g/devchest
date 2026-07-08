@@ -36,6 +36,7 @@ const CaseConverter    = lazy(() => import('../components/tools/text/CaseConvert
 const DiffChecker      = lazy(() => import('../components/tools/text/DiffChecker'));
 const WordCharCounter  = lazy(() => import('../components/tools/text/WordCharCounter'));
 const LoremIpsumGenerator = lazy(() => import('../components/tools/text/LoremIpsumGenerator'));
+const TextSorter       = lazy(() => import('../components/tools/text/TextSorter'));
 const HashGenerator    = lazy(() => import('../components/tools/generators/HashGenerator'));
 const UuidGenerator    = lazy(() => import('../components/tools/generators/UuidGenerator'));
 const TimestampConverter = lazy(() => import('../components/tools/generators/TimestampConverter'));
@@ -76,6 +77,7 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'diff-checker':        <DiffChecker />,
   'word-char-counter':   <WordCharCounter />,
   'lorem-ipsum-generator': <LoremIpsumGenerator />,
+  'text-sorter':         <TextSorter />,
   'hash-generator':      <HashGenerator />,
   'uuid-generator':      <UuidGenerator />,
   'timestamp-converter': <TimestampConverter />,

@@ -51,7 +51,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Diff Checker
 - [x] Word & Character Counter
 - [x] Lorem Ipsum Generator
-- [ ] Text Sorter (alphabetical, numeric, by length, dedup)
+- [x] Text Sorter (alphabetical, numeric, by length, dedup)
 - [ ] Text Reverse
 - [ ] Slug Generator
 - [ ] Whitespace / Line Cleaner (trim, collapse, strip blank lines)

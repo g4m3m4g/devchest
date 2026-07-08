@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord,
+  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ,
 } from 'lucide-react';
 
 export interface Tool {
@@ -272,6 +272,13 @@ export const TOOLS: Tool[] = [
     description: 'Generate placeholder text by words, sentences, or paragraphs',
     categoryId: 'text',
     icon: WholeWord,
+  },
+  {
+    id: 'text-sorter',
+    name: 'Text Sorter',
+    description: 'Sort lines alphabetically, numerically, or by length — with dedup and cleanup options',
+    categoryId: 'text',
+    icon: ArrowUpAZ,
   },
   {
     id: 'hash-generator',
