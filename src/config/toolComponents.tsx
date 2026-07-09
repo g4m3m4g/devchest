@@ -39,6 +39,7 @@ const LoremIpsumGenerator = lazy(() => import('../components/tools/text/LoremIps
 const TextSorter       = lazy(() => import('../components/tools/text/TextSorter'));
 const TextReverse      = lazy(() => import('../components/tools/text/TextReverse'));
 const SlugGenerator    = lazy(() => import('../components/tools/text/SlugGenerator'));
+const WhitespaceLineCleaner = lazy(() => import('../components/tools/text/WhitespaceLineCleaner'));
 const HashGenerator    = lazy(() => import('../components/tools/generators/HashGenerator'));
 const UuidGenerator    = lazy(() => import('../components/tools/generators/UuidGenerator'));
 const TimestampConverter = lazy(() => import('../components/tools/generators/TimestampConverter'));
@@ -82,6 +83,7 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'text-sorter':         <TextSorter />,
   'text-reverse':        <TextReverse />,
   'slug-generator':      <SlugGenerator />,
+  'whitespace-line-cleaner': <WhitespaceLineCleaner />,
   'hash-generator':      <HashGenerator />,
   'uuid-generator':      <UuidGenerator />,
   'timestamp-converter': <TimestampConverter />,

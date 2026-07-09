@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2,
+  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser,
 } from 'lucide-react';
 
 export interface Tool {
@@ -293,6 +293,13 @@ export const TOOLS: Tool[] = [
     description: 'Turn a title into a clean, URL-safe slug',
     categoryId: 'text',
     icon: Link2,
+  },
+  {
+    id: 'whitespace-line-cleaner',
+    name: 'Whitespace / Line Cleaner',
+    description: 'Trim, collapse, and strip whitespace and blank lines from text',
+    categoryId: 'text',
+    icon: Eraser,
   },
   {
     id: 'hash-generator',

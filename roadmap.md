@@ -54,7 +54,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Text Sorter (alphabetical, numeric, by length, dedup)
 - [x] Text Reverse
 - [x] Slug Generator
-- [ ] Whitespace / Line Cleaner (trim, collapse, strip blank lines)
+- [x] Whitespace / Line Cleaner (trim, collapse, strip blank lines)
 - [ ] String Escape / Unescape (JS, Python, SQL strings)
 - [ ] Find & Replace (plain + regex, with capture group substitution)
 - [ ] Line Filter (grep-like — keep / remove matching lines)
