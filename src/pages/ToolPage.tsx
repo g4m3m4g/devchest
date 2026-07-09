@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import { Navigate, useParams } from 'react-router';
 import { TOOLS } from '../config/tools';
 import { TOOL_MAP } from '../config/toolComponents';
-import { buildToolJsonLd, buildToolSeoMeta } from '../lib/seo';
+import { buildToolPageJsonLd, buildToolSeoMeta } from '../lib/seo';
 import { useSEO } from '../hooks/useSEO';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 
@@ -35,7 +35,7 @@ function ToolPageContent({
   tool: (typeof TOOLS)[number];
   component: React.ReactNode;
 }) {
-  useSEO(buildToolSeoMeta(tool), buildToolJsonLd(tool));
+  useSEO(buildToolSeoMeta(tool), buildToolPageJsonLd(tool));
 
   return (
     <div className="flex flex-col h-full">

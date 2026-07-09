@@ -4,12 +4,12 @@ import { TOOLS } from '../src/config/tools';
 import {
   SITE_URL,
   absoluteUrl,
-  buildBreadcrumbJsonLd,
   buildCatalogJsonLd,
   buildCatalogSeoMeta,
-  buildToolJsonLd,
+  buildNotFoundJsonLd,
+  buildNotFoundSeoMeta,
+  buildToolPageJsonLd,
   buildToolSeoMeta,
-  getCategoryForTool,
 } from '../src/lib/seo';
 import type { SeoMeta } from '../src/lib/seo';
 
@@ -82,12 +82,8 @@ function main() {
 
   // Per-tool static pages, generated from the pristine template.
   for (const tool of TOOLS) {
-    const category = getCategoryForTool(tool);
     const meta = buildToolSeoMeta(tool);
-    const jsonLd = {
-      '@context': 'https://schema.org',
-      '@graph': [buildToolJsonLd(tool), buildBreadcrumbJsonLd(tool, category)],
-    };
+    const jsonLd = buildToolPageJsonLd(tool);
     const html = applySeo(template, meta, jsonLd, 'index, follow');
     writeFile(resolve(DIST_DIR, 'tools', tool.id, 'index.html'), html);
   }
@@ -96,18 +92,25 @@ function main() {
   const catalogHtml = applySeo(template, buildCatalogSeoMeta(), buildCatalogJsonLd(), 'index, follow');
   writeFileSync(INDEX_HTML_PATH, catalogHtml);
 
-  // 404 fallback: same shell, guaranteed-correct hashed asset paths since it's post-build.
-  writeFileSync(resolve(DIST_DIR, '404.html'), catalogHtml);
+  // 404 fallback: same shell (guaranteed-correct hashed asset paths since it's post-build),
+  // but with its own noindex meta/canonical/JSON-LD so crawlers don't treat unknown URLs
+  // as an indexable duplicate of the homepage.
+  const notFoundHtml = applySeo(template, buildNotFoundSeoMeta(), buildNotFoundJsonLd(), 'noindex, follow');
+  writeFileSync(resolve(DIST_DIR, '404.html'), notFoundHtml);
 
   // Sitemap.
-  const urls = [
-    `/`,
-    ...TOOLS.map(tool => `/tools/${tool.id}/`),
+  const lastmod = new Date().toISOString().slice(0, 10);
+  const urls: { path: string; priority: string; changefreq: string }[] = [
+    { path: '/', priority: '1.0', changefreq: 'weekly' },
+    ...TOOLS.map(tool => ({ path: `/tools/${tool.id}/`, priority: '0.8', changefreq: 'monthly' })),
   ];
   const sitemap = [
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-    ...urls.map(path => `  <url><loc>${absoluteUrl(path)}</loc></url>`),
+    ...urls.map(
+      ({ path, priority, changefreq }) =>
+        `  <url><loc>${absoluteUrl(path)}</loc><lastmod>${lastmod}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`,
+    ),
     '</urlset>',
     '',
   ].join('\n');
