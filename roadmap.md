@@ -64,7 +64,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Text to ASCII Art
 - [x] Levenshtein Distance Calculator
 - [x] Readability Score (Flesch-Kincaid)
-- [ ] Duplicate Line Remover
+- [x] Duplicate Line Remover
 - [ ] Sentence Counter
 
 ---
