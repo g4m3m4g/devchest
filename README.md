@@ -4,10 +4,10 @@
 
 <h1>DevChest</h1>
 
-<p>A fast, privacy-first developer utility hub.<br>27 tools, zero backend, everything runs in your browser.</p>
+<p>A fast, privacy-first developer utility hub.<br>53 tools, zero backend, everything runs in your browser.</p>
 
 [![Deploy](https://github.com/g4m3m4g/DevChest/actions/workflows/deploy.yml/badge.svg)](https://github.com/g4m3m4g/DevChest/actions/workflows/deploy.yml)
-![Tests](https://img.shields.io/badge/tests-814%20passing-22c55e?style=flat)
+![Tests](https://img.shields.io/badge/tests-1353%20passing-22c55e?style=flat)
 ![React](https://img.shields.io/badge/React-19-61dafb?style=flat&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-6-3178c6?style=flat&logo=typescript&logoColor=white)
 ![Node](https://img.shields.io/badge/Node-%3E%3D22-339933?style=flat&logo=node.js&logoColor=white)
@@ -50,44 +50,73 @@ DevChest is an open-source collection of everyday developer utilities — format
 
 | Tool | Description |
 |---|---|
-| **JSON Formatter** | Format and validate JSON with 2 or 4-space indent, or minify |
-| **SQL Formatter** | Pretty-print SQL queries with dialect-aware keyword casing |
-| **HTML / CSS Minifier** | Strip whitespace and comments from HTML and CSS payloads |
+| **JSON Formatter** | Format and validate JSON with configurable indentation |
+| **SQL Formatter** | Transform messy SQL into clean, structured queries |
+| **HTML / CSS Minifier** | Strip spaces and comments from HTML and CSS payloads |
 | **XML Formatter** | Pretty-print and validate XML with configurable indentation |
-| **YAML Converter** | Format YAML or convert between YAML ↔ JSON |
-| **TOML Converter** | Format TOML or convert between TOML ↔ JSON |
-| **JS / TS Formatter** | Format JavaScript and TypeScript via Prettier (semi, quotes, indent, trailing commas) |
-| **Markdown Preview** | Live-render Markdown to HTML or normalise syntax via Prettier |
-| **CSV Formatter & Viewer** | Parse CSV into a sortable table; reformat with any delimiter |
+| **YAML Converter** | Format YAML or convert between YAML and JSON |
+| **TOML Converter** | Format TOML or convert between TOML and JSON |
+| **JS / TS Formatter** | Format JavaScript and TypeScript using Prettier rules |
+| **CSV Formatter & Viewer** | Parse, view, and reformat CSV with configurable delimiters |
+| **Markdown Preview** | Preview rendered Markdown or format and normalise its syntax |
 | **GraphQL Formatter** | Format GraphQL schemas, queries, mutations, and fragments |
 | **INI Formatter** | Format INI and config files — normalize separators, sort sections and keys |
-| **Dockerfile Formatter** | Format Dockerfiles and lint for common mistakes — deprecated instructions, missing tags, apt hygiene |
+| **Dockerfile Formatter** | Format Dockerfiles and lint for common mistakes — deprecated instructions, missing version tags, apt hygiene |
 | **Nginx Config Formatter** | Format and normalize Nginx configuration files with consistent indentation |
-| **HTTP Headers Formatter** | Parse and format HTTP request/response headers — sort, normalize casing, structured table view |
-| **Log Formatter** | Parse structured JSON logs (pino, winston, bunyan, logrus) — filter by level, toggle metadata |
+| **HTTP Headers Formatter** | Parse and format HTTP request and response headers — sort, normalize casing, table view |
+| **Log Formatter** | Parse structured JSON logs (pino, winston, bunyan) into a readable view — filter by level, toggle metadata |
 
 ### Encoders & Decoders
 
 | Tool | Description |
 |---|---|
-| **Base64 Encoder** | Encode or decode Base64 text; convert images to Data URLs via drag-and-drop |
-| **URL Encoder** | Encode and decode URL components with a reference table |
-| **JWT Decoder** | Inspect JWT header, payload, signature, and expiration status |
+| **Base64 Encoder** | Encode or decode Base64 text and convert images to Data URLs |
+| **URL Encoder** | Encode and decode URL components safely |
+| **JWT Decoder** | Inspect JWT header, payload, and expiration client-side |
+| **HTML Entity Encoder / Decoder** | Escape reserved HTML characters or decode named and numeric entities |
+| **Unicode Encoder / Decoder** | Convert text to Unicode escape sequences (JS, CSS, Python, U+ notation) and back |
+| **Hex Encoder / Decoder** | Convert text to its UTF-8 hexadecimal byte representation and back |
+| **Number Base Converter** | Convert integers between binary, octal, decimal, and hexadecimal |
+| **Morse Code Encoder / Decoder** | Convert text to Morse code and back, with word separators |
+| **Punycode / IDN Encoder / Decoder** | Convert internationalized domain names to Punycode ASCII form and back |
+| **Quoted-Printable Encoder / Decoder** | Convert text to Quoted-Printable (RFC 2045) encoding and back |
+| **Caesar Cipher / ROT-13** | Shift letters by a configurable amount, with a ROT-13 preset |
+| **Gzip / Deflate Compress & Decompress** | Compress and decompress text with Gzip or Deflate entirely in the browser |
+| **JWT Builder** | Build and sign JSON Web Tokens with HMAC-SHA256 |
+| **MIME Type Lookup** | Look up MIME types by file extension, filename, or find extensions for a MIME type |
+| **Data URL ↔ File Converter** | Convert a file to a Data URL, or decode a Data URL back into a downloadable file |
 
 ### Regex & Text
 
 | Tool | Description |
 |---|---|
-| **Regex Tester** | Live inline match highlighting with flag toggles and match counter |
-| **Case Converter** | Transform text into 8 formats simultaneously (camelCase, snake_case, PascalCase, …) |
-| **Diff Checker** | Side-by-side line diff with added / removed statistics |
+| **Regex Tester** | Test regular expressions with live match highlighting |
+| **Case Converter** | Convert text to camelCase, snake_case, PascalCase, and more |
+| **Diff Checker** | Compare two text blocks and visualize line differences |
+| **Word & Character Counter** | Count words, characters, sentences, paragraphs, and lines as you type |
+| **Lorem Ipsum Generator** | Generate placeholder text by words, sentences, or paragraphs |
+| **Text Sorter** | Sort lines alphabetically, numerically, or by length — with dedup and cleanup options |
+| **Text Reverse** | Reverse text by character, word, or line order |
+| **Slug Generator** | Turn a title into a clean, URL-safe slug |
+| **Whitespace / Line Cleaner** | Trim, collapse, and strip whitespace and blank lines from text |
+| **String Escape / Unescape** | Escape or unescape strings for JS, Python, or SQL |
+| **Find & Replace** | Find and replace text with plain matching or regex, including capture group substitution |
+| **Line Filter** | Keep or remove lines matching a plain-text or regex pattern, like grep |
+| **Column Extractor** | Split delimited text and extract selected columns by index |
+| **Markdown to HTML Converter** | Convert Markdown source into sanitized HTML, with a live preview |
+| **HTML to Markdown Converter** | Convert HTML markup into clean Markdown syntax |
+| **Text to ASCII Art** | Render short text as blocky ASCII art letters |
+| **Levenshtein Distance Calculator** | Compute the edit distance and similarity percentage between two strings |
+| **Readability Score** | Flesch Reading Ease and Flesch-Kincaid Grade Level for a block of text |
+| **Duplicate Line Remover** | Remove duplicate lines from text, keeping the first occurrence of each |
+| **Sentence Counter** | Count sentences and words, and see the average sentence length |
 
 ### Security & Generators
 
 | Tool | Description |
 |---|---|
 | **Hash Generator** | Compute MD5, SHA-1, SHA-256, and SHA-512 simultaneously |
-| **UUID Generator** | Bulk-generate v4 UUIDs with delimiter, case, and quantity controls |
+| **UUID Generator** | Bulk-generate v4 UUIDs with format and delimiter controls |
 | **Timestamp Converter** | Convert Unix epochs and ISO dates with a live ticker |
 
 ---
@@ -115,7 +144,7 @@ The dev server starts at **http://localhost:5173**.
 | Command | Description |
 |---|---|
 | `npm run dev` | Start the Vite dev server |
-| `npm run build` | Type-check then bundle for production |
+| `npm run build` | Type-check, bundle for production, and generate SEO pages/sitemap |
 | `npm run test` | Run tests in watch mode |
 | `npm run test:run` | Single test pass (use before committing) |
 | `npm run test:coverage` | Generate V8 coverage report |
@@ -128,50 +157,35 @@ The dev server starts at **http://localhost:5173**.
 ```
 src/
 ├── components/
-│   ├── layout/          # Sidebar (collapsible, responsive), ToolLayout
+│   ├── layout/          # Sidebar, ToolLayout, Breadcrumbs
 │   └── tools/
-│       ├── encoders/    # Base64Tool, JwtDecoder, UrlEncoder
-│       ├── formatters/  # CsvViewer, DockerfileFormatter, GraphqlFormatter,
-│       │                # HtmlCssMinifier, HttpHeadersFormatter, IniFormatter,
-│       │                # JsFormatter, JsonFormatter, LogFormatter,
-│       │                # MarkdownPreview, NginxConfigFormatter, SqlFormatter,
-│       │                # TomlConverter, XmlFormatter, YamlConverter
-│       ├── generators/  # HashGenerator, TimestampConverter, UuidGenerator
-│       └── text/        # CaseConverter, DiffChecker, RegexTester
+│       ├── encoders/    # 15 encoder/decoder tools
+│       ├── formatters/  # 15 formatter/minifier tools
+│       ├── generators/  # 3 security/generator tools
+│       └── text/        # 20 regex & text tools
 ├── config/
-│   └── tools.ts         # Central tool & category registry
+│   ├── tools.ts          # Central tool & category registry
+│   └── toolComponents.tsx # React.lazy registry, keyed by tool id
 ├── context/
-│   └── ToolContext.tsx  # Active tool ID + search query
+│   └── ToolContext.tsx   # Active tool ID + search query
 ├── hooks/
-│   └── useLocalStorage.ts
-├── lib/                 # Pure functions — independently testable
-│   ├── base64.ts
-│   ├── cases.ts
-│   ├── csv.ts
-│   ├── dockerfile.ts
-│   ├── graphqlFormatter.ts
-│   ├── httpHeaders.ts
-│   ├── ini.ts
-│   ├── jsFormatter.ts
-│   ├── jwt.ts
-│   ├── logFormatter.ts
-│   ├── markdownFormatter.ts
-│   ├── minifiers.ts
-│   ├── nginxConfig.ts
-│   ├── regex.ts
-│   ├── timestamp.ts
-│   ├── toml.ts
-│   ├── url.ts
-│   ├── uuid.ts
-│   ├── xml.ts
-│   └── yaml.ts
-└── __tests__/           # 814 tests across 56 files
-    ├── components/      # Component integration tests
+│   ├── useLocalStorage.ts
+│   └── useSEO.ts
+├── pages/
+│   ├── ToolCatalog.tsx   # Landing grid of all tools
+│   ├── ToolPage.tsx      # Lazy-loads the active tool via Suspense
+│   └── NotFound.tsx
+├── lib/                  # Pure functions — independently testable, no DOM
+│   └── ...                # One module per tool (e.g. base64.ts, levenshtein.ts, readability.ts)
+└── __tests__/             # Mirrors src/ — one test file per lib module and component
+    ├── components/
     ├── hooks/
-    └── lib/             # Unit tests for utility modules
+    └── lib/
 ```
 
-All tools are lazy-loaded via `React.lazy` + `Suspense`. Business logic lives in `src/lib/` as pure functions — components only read state and call lib functions.
+All tools are lazy-loaded via `React.lazy` + `Suspense`, registered in `src/config/toolComponents.tsx` and keyed by the tool `id` from `src/config/tools.ts`. Business logic lives in `src/lib/` as pure functions — components only read state and call lib functions.
+
+A build-time script (`scripts/build-seo.ts`) generates a static SEO page per tool plus `sitemap.xml`, run automatically as part of `npm run build`.
 
 ---
 
@@ -180,16 +194,20 @@ All tools are lazy-loaded via `React.lazy` + `Suspense`. Business logic lives in
 | Layer | Technology |
 |---|---|
 | Framework | [React 19](https://react.dev) with React Compiler |
+| Routing | [React Router 7](https://reactrouter.com) |
 | Build tool | [Vite 8](https://vite.dev) with Rolldown |
 | Language | [TypeScript 6](https://www.typescriptlang.org) (`erasableSyntaxOnly`, `verbatimModuleSyntax`) |
 | Styling | [Tailwind CSS v4](https://tailwindcss.com) via `@tailwindcss/vite` |
 | Icons | [Lucide React](https://lucide.dev) |
 | Testing | [Vitest 4](https://vitest.dev) + [Testing Library](https://testing-library.com) |
-| Formatting | [Prettier 3](https://prettier.io) (JS/TS/Markdown formatter tool) |
+| Formatting | [Prettier 3](https://prettier.io) (JS/TS/Markdown formatter tools) |
 | CSV | [Papa Parse](https://www.papaparse.com) |
 | YAML | [js-yaml](https://github.com/nodeca/js-yaml) |
 | TOML | [smol-toml](https://github.com/nicolo-ribaudo/smol-toml) |
+| SQL | [sql-formatter](https://github.com/sql-formatter-org/sql-formatter) |
 | Markdown | [marked](https://marked.js.org) + [DOMPurify](https://github.com/cure53/DOMPurify) |
+| Diffing | [diff](https://github.com/kpdecker/jsdiff) |
+| Hashing | [crypto-js](https://github.com/brix/crypto-js) + Web `SubtleCrypto` |
 
 ---
 
@@ -200,7 +218,7 @@ npm run test:run        # Single pass — run before every commit
 npm run test:coverage   # With V8 coverage report
 ```
 
-**814 tests, 0 failures** across 56 test files — every tool component and every lib module is covered.
+**1353 tests, 0 failures** across 105 test files — every tool component and every lib module is covered.
 
 Notable patterns in the test suite:
 
@@ -214,7 +232,7 @@ Notable patterns in the test suite:
 
 ## Architecture
 
-**No backend.** All processing runs in the browser via standard Web APIs (`DOMParser`, `SubtleCrypto`, `crypto.randomUUID`, `Clipboard`). No data leaves the client.
+**No backend.** All processing runs in the browser via standard Web APIs (`DOMParser`, `SubtleCrypto`, `crypto.randomUUID`, `Clipboard`, `CompressionStream`). No data leaves the client.
 
 **Layering rule:** business logic lives in `src/lib/` as pure, side-effect-free functions. Components are thin — they manage local UI state and call lib functions. This keeps lib functions fast to test without a DOM.
 
@@ -232,8 +250,8 @@ Contributions are welcome. To add a new tool, follow the steps in [`CLAUDE.md`](
 
 1. Create `src/lib/<name>.ts` with pure functions and export types
 2. Create `src/components/tools/<category>/<Name>.tsx` using `ToolLayout` and `Panel`
-3. Register the tool in `src/config/tools.ts`
-4. Add a `React.lazy` import and Suspense case in `src/App.tsx`
+3. Register the tool in `src/config/tools.ts` (add to `TOOLS[]`, ensure the category exists in `CATEGORIES[]`)
+4. Add a `React.lazy` import and `TOOL_MAP` entry in `src/config/toolComponents.tsx`
 5. Write `src/__tests__/lib/<name>.test.ts` and `src/__tests__/components/<Name>.test.tsx`
 6. Run `npm run test:run && npm run build` — both must pass clean before opening a PR
 
