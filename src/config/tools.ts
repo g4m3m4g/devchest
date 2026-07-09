@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3,
+  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2,
 } from 'lucide-react';
 
 export interface Tool {
@@ -328,6 +328,13 @@ export const TOOLS: Tool[] = [
     description: 'Split delimited text and extract selected columns by index',
     categoryId: 'text',
     icon: Columns3,
+  },
+  {
+    id: 'markdown-to-html',
+    name: 'Markdown to HTML Converter',
+    description: 'Convert Markdown source into sanitized HTML, with a live preview',
+    categoryId: 'text',
+    icon: FileCode2,
   },
   {
     id: 'hash-generator',

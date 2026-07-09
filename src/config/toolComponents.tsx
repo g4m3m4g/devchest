@@ -44,6 +44,7 @@ const StringEscapeTool = lazy(() => import('../components/tools/text/StringEscap
 const FindReplaceTool  = lazy(() => import('../components/tools/text/FindReplaceTool'));
 const LineFilterTool   = lazy(() => import('../components/tools/text/LineFilterTool'));
 const ColumnExtractorTool = lazy(() => import('../components/tools/text/ColumnExtractorTool'));
+const MarkdownToHtmlTool = lazy(() => import('../components/tools/text/MarkdownToHtmlTool'));
 const HashGenerator    = lazy(() => import('../components/tools/generators/HashGenerator'));
 const UuidGenerator    = lazy(() => import('../components/tools/generators/UuidGenerator'));
 const TimestampConverter = lazy(() => import('../components/tools/generators/TimestampConverter'));
@@ -92,6 +93,7 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'find-replace':        <FindReplaceTool />,
   'line-filter':         <LineFilterTool />,
   'column-extractor':    <ColumnExtractorTool />,
+  'markdown-to-html':    <MarkdownToHtmlTool />,
   'hash-generator':      <HashGenerator />,
   'uuid-generator':      <UuidGenerator />,
   'timestamp-converter': <TimestampConverter />,
