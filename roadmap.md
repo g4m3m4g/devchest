@@ -58,7 +58,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] String Escape / Unescape (JS, Python, SQL strings)
 - [x] Find & Replace (plain + regex, with capture group substitution)
 - [x] Line Filter (grep-like — keep / remove matching lines)
-- [ ] Column Extractor (split on delimiter, pick columns)
+- [x] Column Extractor (split on delimiter, pick columns)
 - [ ] Markdown to HTML Converter
 - [ ] HTML to Markdown Converter
 - [ ] Text to ASCII Art

@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter,
+  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3,
 } from 'lucide-react';
 
 export interface Tool {
@@ -321,6 +321,13 @@ export const TOOLS: Tool[] = [
     description: 'Keep or remove lines matching a plain-text or regex pattern, like grep',
     categoryId: 'text',
     icon: Filter,
+  },
+  {
+    id: 'column-extractor',
+    name: 'Column Extractor',
+    description: 'Split delimited text and extract selected columns by index',
+    categoryId: 'text',
+    icon: Columns3,
   },
   {
     id: 'hash-generator',
