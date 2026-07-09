@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote,
+  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace,
 } from 'lucide-react';
 
 export interface Tool {
@@ -307,6 +307,13 @@ export const TOOLS: Tool[] = [
     description: 'Escape or unescape strings for JS, Python, or SQL',
     categoryId: 'text',
     icon: Quote,
+  },
+  {
+    id: 'find-replace',
+    name: 'Find & Replace',
+    description: 'Find and replace text with plain matching or regex, including capture group substitution',
+    categoryId: 'text',
+    icon: Replace,
   },
   {
     id: 'hash-generator',

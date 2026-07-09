@@ -41,6 +41,7 @@ const TextReverse      = lazy(() => import('../components/tools/text/TextReverse
 const SlugGenerator    = lazy(() => import('../components/tools/text/SlugGenerator'));
 const WhitespaceLineCleaner = lazy(() => import('../components/tools/text/WhitespaceLineCleaner'));
 const StringEscapeTool = lazy(() => import('../components/tools/text/StringEscapeTool'));
+const FindReplaceTool  = lazy(() => import('../components/tools/text/FindReplaceTool'));
 const HashGenerator    = lazy(() => import('../components/tools/generators/HashGenerator'));
 const UuidGenerator    = lazy(() => import('../components/tools/generators/UuidGenerator'));
 const TimestampConverter = lazy(() => import('../components/tools/generators/TimestampConverter'));
@@ -86,6 +87,7 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'slug-generator':      <SlugGenerator />,
   'whitespace-line-cleaner': <WhitespaceLineCleaner />,
   'string-escape':       <StringEscapeTool />,
+  'find-replace':        <FindReplaceTool />,
   'hash-generator':      <HashGenerator />,
   'uuid-generator':      <UuidGenerator />,
   'timestamp-converter': <TimestampConverter />,

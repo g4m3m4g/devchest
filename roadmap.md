@@ -56,7 +56,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Slug Generator
 - [x] Whitespace / Line Cleaner (trim, collapse, strip blank lines)
 - [x] String Escape / Unescape (JS, Python, SQL strings)
-- [ ] Find & Replace (plain + regex, with capture group substitution)
+- [x] Find & Replace (plain + regex, with capture group substitution)
 - [ ] Line Filter (grep-like — keep / remove matching lines)
 - [ ] Column Extractor (split on delimiter, pick columns)
 - [ ] Markdown to HTML Converter
