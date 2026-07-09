@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser,
+  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote,
 } from 'lucide-react';
 
 export interface Tool {
@@ -300,6 +300,13 @@ export const TOOLS: Tool[] = [
     description: 'Trim, collapse, and strip whitespace and blank lines from text',
     categoryId: 'text',
     icon: Eraser,
+  },
+  {
+    id: 'string-escape',
+    name: 'String Escape / Unescape',
+    description: 'Escape or unescape strings for JS, Python, or SQL',
+    categoryId: 'text',
+    icon: Quote,
   },
   {
     id: 'hash-generator',
