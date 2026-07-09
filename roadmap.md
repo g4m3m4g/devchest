@@ -54,18 +54,18 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Text Sorter (alphabetical, numeric, by length, dedup)
 - [x] Text Reverse
 - [x] Slug Generator
-- [ ] Whitespace / Line Cleaner (trim, collapse, strip blank lines)
-- [ ] String Escape / Unescape (JS, Python, SQL strings)
-- [ ] Find & Replace (plain + regex, with capture group substitution)
-- [ ] Line Filter (grep-like — keep / remove matching lines)
-- [ ] Column Extractor (split on delimiter, pick columns)
-- [ ] Markdown to HTML Converter
-- [ ] HTML to Markdown Converter
-- [ ] Text to ASCII Art
-- [ ] Levenshtein Distance Calculator
-- [ ] Readability Score (Flesch-Kincaid)
-- [ ] Duplicate Line Remover
-- [ ] Sentence Counter
+- [x] Whitespace / Line Cleaner (trim, collapse, strip blank lines)
+- [x] String Escape / Unescape (JS, Python, SQL strings)
+- [x] Find & Replace (plain + regex, with capture group substitution)
+- [x] Line Filter (grep-like — keep / remove matching lines)
+- [x] Column Extractor (split on delimiter, pick columns)
+- [x] Markdown to HTML Converter
+- [x] HTML to Markdown Converter
+- [x] Text to ASCII Art
+- [x] Levenshtein Distance Calculator
+- [x] Readability Score (Flesch-Kincaid)
+- [x] Duplicate Line Remover
+- [x] Sentence Counter
 
 ---
 

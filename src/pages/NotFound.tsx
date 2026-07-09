@@ -1,9 +1,9 @@
 import { Link } from 'react-router';
-import { buildNotFoundSeoMeta } from '../lib/seo';
+import { buildNotFoundJsonLd, buildNotFoundSeoMeta } from '../lib/seo';
 import { useSEO } from '../hooks/useSEO';
 
 export default function NotFound() {
-  useSEO(buildNotFoundSeoMeta(), { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Not Found' }, 'noindex, follow');
+  useSEO(buildNotFoundSeoMeta(), buildNotFoundJsonLd(), 'noindex, follow');
 
   return (
     <div className="flex flex-col items-center justify-center h-full text-center">

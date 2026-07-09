@@ -4,7 +4,7 @@ import { CATEGORIES, TOOLS } from '../config/tools';
 export const SITE_NAME = 'DevChest';
 export const SITE_URL = 'https://g4m3m4g.github.io/devchest';
 export const SITE_DESCRIPTION =
-  'DevChest — A developer utility hub for formatters, encoders, text tools, and generators. 24 tools, zero backend, everything runs in your browser.';
+  `DevChest — A developer utility hub for formatters, encoders, text tools, and generators. ${TOOLS.length} tools, zero backend, everything runs in your browser.`;
 
 export interface SeoMeta {
   title: string;
@@ -114,6 +114,18 @@ export function buildBreadcrumbJsonLd(tool: Tool, category: Category): object {
         item: absoluteUrl(`/tools/${tool.id}/`),
       },
     ],
+  };
+}
+
+export function buildNotFoundJsonLd(): object {
+  return { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Not Found' };
+}
+
+export function buildToolPageJsonLd(tool: Tool): object {
+  const category = getCategoryForTool(tool);
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [buildToolJsonLd(tool), buildBreadcrumbJsonLd(tool, category)],
   };
 }
 

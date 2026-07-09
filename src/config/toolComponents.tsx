@@ -39,6 +39,18 @@ const LoremIpsumGenerator = lazy(() => import('../components/tools/text/LoremIps
 const TextSorter       = lazy(() => import('../components/tools/text/TextSorter'));
 const TextReverse      = lazy(() => import('../components/tools/text/TextReverse'));
 const SlugGenerator    = lazy(() => import('../components/tools/text/SlugGenerator'));
+const WhitespaceLineCleaner = lazy(() => import('../components/tools/text/WhitespaceLineCleaner'));
+const StringEscapeTool = lazy(() => import('../components/tools/text/StringEscapeTool'));
+const FindReplaceTool  = lazy(() => import('../components/tools/text/FindReplaceTool'));
+const LineFilterTool   = lazy(() => import('../components/tools/text/LineFilterTool'));
+const ColumnExtractorTool = lazy(() => import('../components/tools/text/ColumnExtractorTool'));
+const MarkdownToHtmlTool = lazy(() => import('../components/tools/text/MarkdownToHtmlTool'));
+const HtmlToMarkdownTool = lazy(() => import('../components/tools/text/HtmlToMarkdownTool'));
+const AsciiArtTool     = lazy(() => import('../components/tools/text/AsciiArtTool'));
+const LevenshteinTool  = lazy(() => import('../components/tools/text/LevenshteinTool'));
+const ReadabilityTool  = lazy(() => import('../components/tools/text/ReadabilityTool'));
+const DuplicateLineRemoverTool = lazy(() => import('../components/tools/text/DuplicateLineRemoverTool'));
+const SentenceCounterTool = lazy(() => import('../components/tools/text/SentenceCounterTool'));
 const HashGenerator    = lazy(() => import('../components/tools/generators/HashGenerator'));
 const UuidGenerator    = lazy(() => import('../components/tools/generators/UuidGenerator'));
 const TimestampConverter = lazy(() => import('../components/tools/generators/TimestampConverter'));
@@ -82,6 +94,18 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'text-sorter':         <TextSorter />,
   'text-reverse':        <TextReverse />,
   'slug-generator':      <SlugGenerator />,
+  'whitespace-line-cleaner': <WhitespaceLineCleaner />,
+  'string-escape':       <StringEscapeTool />,
+  'find-replace':        <FindReplaceTool />,
+  'line-filter':         <LineFilterTool />,
+  'column-extractor':    <ColumnExtractorTool />,
+  'markdown-to-html':    <MarkdownToHtmlTool />,
+  'html-to-markdown':    <HtmlToMarkdownTool />,
+  'ascii-art':           <AsciiArtTool />,
+  'levenshtein-distance': <LevenshteinTool />,
+  'readability-score':   <ReadabilityTool />,
+  'duplicate-line-remover': <DuplicateLineRemoverTool />,
+  'sentence-counter':    <SentenceCounterTool />,
   'hash-generator':      <HashGenerator />,
   'uuid-generator':      <UuidGenerator />,
   'timestamp-converter': <TimestampConverter />,

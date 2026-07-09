@@ -5,10 +5,13 @@ import {
   buildBreadcrumbJsonLd,
   buildCatalogJsonLd,
   buildCatalogSeoMeta,
+  buildNotFoundJsonLd,
   buildNotFoundSeoMeta,
   buildToolJsonLd,
+  buildToolPageJsonLd,
   buildToolSeoMeta,
   getCategoryForTool,
+  SITE_DESCRIPTION,
   SITE_URL,
 } from '../../lib/seo';
 
@@ -37,6 +40,12 @@ describe('buildCatalogSeoMeta', () => {
     expect(meta.canonicalPath).toBe('/');
     expect(meta.title).toContain('DevChest');
     expect(meta.description.length).toBeGreaterThan(0);
+  });
+});
+
+describe('SITE_DESCRIPTION', () => {
+  it('reflects the current tool count rather than a stale hardcoded number', () => {
+    expect(SITE_DESCRIPTION).toContain(`${TOOLS.length} tools`);
   });
 });
 
@@ -77,6 +86,22 @@ describe('buildBreadcrumbJsonLd', () => {
     expect(jsonLd.itemListElement).toHaveLength(3);
     expect(jsonLd.itemListElement[0].name).toBe('Home');
     expect(jsonLd.itemListElement[2].name).toBe(sampleTool.name);
+  });
+});
+
+describe('buildToolPageJsonLd', () => {
+  it('combines the SoftwareApplication and BreadcrumbList into one graph', () => {
+    const jsonLd = buildToolPageJsonLd(sampleTool) as { '@graph': Array<Record<string, unknown>> };
+    expect(jsonLd['@graph']).toHaveLength(2);
+    expect(jsonLd['@graph'][0]['@type']).toBe('SoftwareApplication');
+    expect(jsonLd['@graph'][1]['@type']).toBe('BreadcrumbList');
+  });
+});
+
+describe('buildNotFoundJsonLd', () => {
+  it('returns a WebPage schema', () => {
+    const jsonLd = buildNotFoundJsonLd() as Record<string, unknown>;
+    expect(jsonLd['@type']).toBe('WebPage');
   });
 });
 
