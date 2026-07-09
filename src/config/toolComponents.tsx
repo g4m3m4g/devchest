@@ -46,6 +46,7 @@ const LineFilterTool   = lazy(() => import('../components/tools/text/LineFilterT
 const ColumnExtractorTool = lazy(() => import('../components/tools/text/ColumnExtractorTool'));
 const MarkdownToHtmlTool = lazy(() => import('../components/tools/text/MarkdownToHtmlTool'));
 const HtmlToMarkdownTool = lazy(() => import('../components/tools/text/HtmlToMarkdownTool'));
+const AsciiArtTool     = lazy(() => import('../components/tools/text/AsciiArtTool'));
 const HashGenerator    = lazy(() => import('../components/tools/generators/HashGenerator'));
 const UuidGenerator    = lazy(() => import('../components/tools/generators/UuidGenerator'));
 const TimestampConverter = lazy(() => import('../components/tools/generators/TimestampConverter'));
@@ -96,6 +97,7 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'column-extractor':    <ColumnExtractorTool />,
   'markdown-to-html':    <MarkdownToHtmlTool />,
   'html-to-markdown':    <HtmlToMarkdownTool />,
+  'ascii-art':           <AsciiArtTool />,
   'hash-generator':      <HashGenerator />,
   'uuid-generator':      <UuidGenerator />,
   'timestamp-converter': <TimestampConverter />,

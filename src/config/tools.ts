@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText,
+  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles,
 } from 'lucide-react';
 
 export interface Tool {
@@ -342,6 +342,13 @@ export const TOOLS: Tool[] = [
     description: 'Convert HTML markup into clean Markdown syntax',
     categoryId: 'text',
     icon: FileText,
+  },
+  {
+    id: 'ascii-art',
+    name: 'Text to ASCII Art',
+    description: 'Render short text as blocky ASCII art letters',
+    categoryId: 'text',
+    icon: Sparkles,
   },
   {
     id: 'hash-generator',

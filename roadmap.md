@@ -61,7 +61,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Column Extractor (split on delimiter, pick columns)
 - [x] Markdown to HTML Converter
 - [x] HTML to Markdown Converter
-- [ ] Text to ASCII Art
+- [x] Text to ASCII Art
 - [ ] Levenshtein Distance Calculator
 - [ ] Readability Score (Flesch-Kincaid)
 - [ ] Duplicate Line Remover
