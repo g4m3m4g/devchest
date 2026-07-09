@@ -62,7 +62,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Markdown to HTML Converter
 - [x] HTML to Markdown Converter
 - [x] Text to ASCII Art
-- [ ] Levenshtein Distance Calculator
+- [x] Levenshtein Distance Calculator
 - [ ] Readability Score (Flesch-Kincaid)
 - [ ] Duplicate Line Remover
 - [ ] Sentence Counter

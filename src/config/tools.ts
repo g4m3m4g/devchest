@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles,
+  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows,
 } from 'lucide-react';
 
 export interface Tool {
@@ -349,6 +349,13 @@ export const TOOLS: Tool[] = [
     description: 'Render short text as blocky ASCII art letters',
     categoryId: 'text',
     icon: Sparkles,
+  },
+  {
+    id: 'levenshtein-distance',
+    name: 'Levenshtein Distance Calculator',
+    description: 'Compute the edit distance and similarity percentage between two strings',
+    categoryId: 'text',
+    icon: GitCompareArrows,
   },
   {
     id: 'hash-generator',
