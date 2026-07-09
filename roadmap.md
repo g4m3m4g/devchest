@@ -60,7 +60,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Line Filter (grep-like — keep / remove matching lines)
 - [x] Column Extractor (split on delimiter, pick columns)
 - [x] Markdown to HTML Converter
-- [ ] HTML to Markdown Converter
+- [x] HTML to Markdown Converter
 - [ ] Text to ASCII Art
 - [ ] Levenshtein Distance Calculator
 - [ ] Readability Score (Flesch-Kincaid)
