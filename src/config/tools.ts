@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows,
+  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap,
 } from 'lucide-react';
 
 export interface Tool {
@@ -356,6 +356,13 @@ export const TOOLS: Tool[] = [
     description: 'Compute the edit distance and similarity percentage between two strings',
     categoryId: 'text',
     icon: GitCompareArrows,
+  },
+  {
+    id: 'readability-score',
+    name: 'Readability Score',
+    description: 'Flesch Reading Ease and Flesch-Kincaid Grade Level for a block of text',
+    categoryId: 'text',
+    icon: GraduationCap,
   },
   {
     id: 'hash-generator',

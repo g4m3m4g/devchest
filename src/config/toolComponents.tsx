@@ -48,6 +48,7 @@ const MarkdownToHtmlTool = lazy(() => import('../components/tools/text/MarkdownT
 const HtmlToMarkdownTool = lazy(() => import('../components/tools/text/HtmlToMarkdownTool'));
 const AsciiArtTool     = lazy(() => import('../components/tools/text/AsciiArtTool'));
 const LevenshteinTool  = lazy(() => import('../components/tools/text/LevenshteinTool'));
+const ReadabilityTool  = lazy(() => import('../components/tools/text/ReadabilityTool'));
 const HashGenerator    = lazy(() => import('../components/tools/generators/HashGenerator'));
 const UuidGenerator    = lazy(() => import('../components/tools/generators/UuidGenerator'));
 const TimestampConverter = lazy(() => import('../components/tools/generators/TimestampConverter'));
@@ -100,6 +101,7 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'html-to-markdown':    <HtmlToMarkdownTool />,
   'ascii-art':           <AsciiArtTool />,
   'levenshtein-distance': <LevenshteinTool />,
+  'readability-score':   <ReadabilityTool />,
   'hash-generator':      <HashGenerator />,
   'uuid-generator':      <UuidGenerator />,
   'timestamp-converter': <TimestampConverter />,
