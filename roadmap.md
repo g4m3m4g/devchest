@@ -65,7 +65,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Levenshtein Distance Calculator
 - [x] Readability Score (Flesch-Kincaid)
 - [x] Duplicate Line Remover
-- [ ] Sentence Counter
+- [x] Sentence Counter
 
 ---
 

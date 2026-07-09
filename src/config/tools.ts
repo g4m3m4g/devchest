@@ -4,7 +4,7 @@ import {
   FileCode, AlignLeft, SlidersHorizontal, FileJson, BookOpen, Table2, Workflow, Settings2, Container, Server, Globe, ScrollText,
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
-  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX,
+  Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
 } from 'lucide-react';
 
 export interface Tool {
@@ -370,6 +370,13 @@ export const TOOLS: Tool[] = [
     description: 'Remove duplicate lines from text, keeping the first occurrence of each',
     categoryId: 'text',
     icon: ListX,
+  },
+  {
+    id: 'sentence-counter',
+    name: 'Sentence Counter',
+    description: 'Count sentences and words, and see the average sentence length',
+    categoryId: 'text',
+    icon: MessageSquareText,
   },
   {
     id: 'hash-generator',

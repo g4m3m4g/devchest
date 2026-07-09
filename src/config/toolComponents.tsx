@@ -50,6 +50,7 @@ const AsciiArtTool     = lazy(() => import('../components/tools/text/AsciiArtToo
 const LevenshteinTool  = lazy(() => import('../components/tools/text/LevenshteinTool'));
 const ReadabilityTool  = lazy(() => import('../components/tools/text/ReadabilityTool'));
 const DuplicateLineRemoverTool = lazy(() => import('../components/tools/text/DuplicateLineRemoverTool'));
+const SentenceCounterTool = lazy(() => import('../components/tools/text/SentenceCounterTool'));
 const HashGenerator    = lazy(() => import('../components/tools/generators/HashGenerator'));
 const UuidGenerator    = lazy(() => import('../components/tools/generators/UuidGenerator'));
 const TimestampConverter = lazy(() => import('../components/tools/generators/TimestampConverter'));
@@ -104,6 +105,7 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'levenshtein-distance': <LevenshteinTool />,
   'readability-score':   <ReadabilityTool />,
   'duplicate-line-remover': <DuplicateLineRemoverTool />,
+  'sentence-counter':    <SentenceCounterTool />,
   'hash-generator':      <HashGenerator />,
   'uuid-generator':      <UuidGenerator />,
   'timestamp-converter': <TimestampConverter />,
