@@ -5,7 +5,7 @@ import {
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
-  Boxes,
+  Boxes, Barcode,
 } from 'lucide-react';
 
 export interface Tool {
@@ -406,5 +406,12 @@ export const TOOLS: Tool[] = [
     description: 'Generate timestamp-based, name-based, and Unix-time UUIDs beyond the standard v4',
     categoryId: 'generators',
     icon: Boxes,
+  },
+  {
+    id: 'ulid-generator',
+    name: 'ULID Generator',
+    description: 'Generate bulk ULIDs — lexicographically sortable, 128-bit, timestamp-prefixed identifiers',
+    categoryId: 'generators',
+    icon: Barcode,
   },
 ];

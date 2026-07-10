@@ -75,7 +75,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] UUID Generator (v4)
 - [x] Timestamp Converter
 - [x] UUID v1 / v3 / v5 / v7 Generator
-- [ ] ULID Generator
+- [x] ULID Generator
 - [ ] Nano ID Generator
 - [ ] Password Generator (length, charset, entropy display)
 - [ ] Passphrase Generator (wordlist-based, BIP39)
