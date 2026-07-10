@@ -54,6 +54,7 @@ const SentenceCounterTool = lazy(() => import('../components/tools/text/Sentence
 const HashGenerator    = lazy(() => import('../components/tools/generators/HashGenerator'));
 const UuidGenerator    = lazy(() => import('../components/tools/generators/UuidGenerator'));
 const TimestampConverter = lazy(() => import('../components/tools/generators/TimestampConverter'));
+const UuidVersionsGenerator = lazy(() => import('../components/tools/generators/UuidVersionsGenerator'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -109,4 +110,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'hash-generator':      <HashGenerator />,
   'uuid-generator':      <UuidGenerator />,
   'timestamp-converter': <TimestampConverter />,
+  'uuid-versions-generator': <UuidVersionsGenerator />,
 };

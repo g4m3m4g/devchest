@@ -5,6 +5,7 @@ import {
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
+  Boxes,
 } from 'lucide-react';
 
 export interface Tool {
@@ -398,5 +399,12 @@ export const TOOLS: Tool[] = [
     description: 'Convert Unix epochs and ISO dates with a live ticker',
     categoryId: 'generators',
     icon: Clock,
+  },
+  {
+    id: 'uuid-versions-generator',
+    name: 'UUID v1 / v3 / v5 / v7 Generator',
+    description: 'Generate timestamp-based, name-based, and Unix-time UUIDs beyond the standard v4',
+    categoryId: 'generators',
+    icon: Boxes,
   },
 ];

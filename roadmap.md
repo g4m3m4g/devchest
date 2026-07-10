@@ -74,7 +74,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Hash Generator (MD5, SHA-1/256/512)
 - [x] UUID Generator (v4)
 - [x] Timestamp Converter
-- [ ] UUID v1 / v3 / v5 / v7 Generator
+- [x] UUID v1 / v3 / v5 / v7 Generator
 - [ ] ULID Generator
 - [ ] Nano ID Generator
 - [ ] Password Generator (length, charset, entropy display)
