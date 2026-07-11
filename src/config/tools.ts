@@ -5,7 +5,7 @@ import {
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
-  Boxes, Barcode,
+  Boxes, Barcode, KeyRound,
 } from 'lucide-react';
 
 export interface Tool {
@@ -413,5 +413,12 @@ export const TOOLS: Tool[] = [
     description: 'Generate bulk ULIDs — lexicographically sortable, 128-bit, timestamp-prefixed identifiers',
     categoryId: 'generators',
     icon: Barcode,
+  },
+  {
+    id: 'password-generator',
+    name: 'Password Generator',
+    description: 'Generate strong random passwords with configurable length, charset, and entropy display',
+    categoryId: 'generators',
+    icon: KeyRound,
   },
 ];
