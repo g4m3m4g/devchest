@@ -86,7 +86,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] RSA Key Pair Generator (in-browser WebCrypto)
 - [x] Certificate Decoder (PEM → human-readable fields)
 - [x] SSH Key Fingerprint
-- [ ] CSRF Token Generator
+- [x] CSRF Token Generator
 - [ ] Content Security Policy Builder
 - [ ] robots.txt Generator
 - [ ] .htaccess Generator

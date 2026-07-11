@@ -5,7 +5,7 @@ import {
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
-  Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal,
+  Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert,
 } from 'lucide-react';
 
 export interface Tool {
@@ -476,5 +476,12 @@ export const TOOLS: Tool[] = [
     description: 'Compute the MD5 and SHA256 fingerprints of an OpenSSH public key, client-side',
     categoryId: 'generators',
     icon: Terminal,
+  },
+  {
+    id: 'csrf-token-generator',
+    name: 'CSRF Token Generator',
+    description: 'Generate a cryptographically random CSRF token with configurable length and encoding',
+    categoryId: 'generators',
+    icon: ShieldAlert,
   },
 ];
