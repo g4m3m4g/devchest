@@ -85,7 +85,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Argon2 Hash & Verify
 - [x] RSA Key Pair Generator (in-browser WebCrypto)
 - [x] Certificate Decoder (PEM → human-readable fields)
-- [ ] SSH Key Fingerprint
+- [x] SSH Key Fingerprint
 - [ ] CSRF Token Generator
 - [ ] Content Security Policy Builder
 - [ ] robots.txt Generator

@@ -5,7 +5,7 @@ import {
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
-  Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge,
+  Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal,
 } from 'lucide-react';
 
 export interface Tool {
@@ -469,5 +469,12 @@ export const TOOLS: Tool[] = [
     description: 'Decode a PEM-encoded X.509 certificate into human-readable subject, validity, key, and extension fields',
     categoryId: 'generators',
     icon: FileBadge,
+  },
+  {
+    id: 'ssh-fingerprint',
+    name: 'SSH Key Fingerprint',
+    description: 'Compute the MD5 and SHA256 fingerprints of an OpenSSH public key, client-side',
+    categoryId: 'generators',
+    icon: Terminal,
   },
 ];
