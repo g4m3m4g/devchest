@@ -66,6 +66,7 @@ const RsaKeyPairGenerator = lazy(() => import('../components/tools/generators/Rs
 const CertificateDecoder = lazy(() => import('../components/tools/generators/CertificateDecoder'));
 const SshFingerprintTool = lazy(() => import('../components/tools/generators/SshFingerprintTool'));
 const CsrfTokenGenerator = lazy(() => import('../components/tools/generators/CsrfTokenGenerator'));
+const CspBuilder = lazy(() => import('../components/tools/generators/CspBuilder'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -133,4 +134,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'certificate-decoder': <CertificateDecoder />,
   'ssh-fingerprint':     <SshFingerprintTool />,
   'csrf-token-generator': <CsrfTokenGenerator />,
+  'csp-builder':         <CspBuilder />,
 };
