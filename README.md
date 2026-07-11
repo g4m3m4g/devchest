@@ -4,10 +4,10 @@
 
 <h1>DevChest</h1>
 
-<p>A fast, privacy-first developer utility hub.<br>53 tools, zero backend, everything runs in your browser.</p>
+<p>A fast, privacy-first developer utility hub.<br>69 tools, zero backend, everything runs in your browser.</p>
 
 [![Deploy](https://github.com/g4m3m4g/DevChest/actions/workflows/deploy.yml/badge.svg)](https://github.com/g4m3m4g/DevChest/actions/workflows/deploy.yml)
-![Tests](https://img.shields.io/badge/tests-1356%20passing-22c55e?style=flat)
+![Tests](https://img.shields.io/badge/tests-1670%20passing-22c55e?style=flat)
 ![React](https://img.shields.io/badge/React-19-61dafb?style=flat&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-6-3178c6?style=flat&logo=typescript&logoColor=white)
 ![Node](https://img.shields.io/badge/Node-%3E%3D22-339933?style=flat&logo=node.js&logoColor=white)
@@ -118,6 +118,22 @@ DevChest is an open-source collection of everyday developer utilities — format
 | **Hash Generator** | Compute MD5, SHA-1, SHA-256, and SHA-512 simultaneously |
 | **UUID Generator** | Bulk-generate v4 UUIDs with format and delimiter controls |
 | **Timestamp Converter** | Convert Unix epochs and ISO dates with a live ticker |
+| **UUID v1 / v3 / v5 / v7 Generator** | Generate timestamp-based, name-based, and Unix-time UUIDs beyond the standard v4 |
+| **ULID Generator** | Generate bulk ULIDs — lexicographically sortable, 128-bit, timestamp-prefixed identifiers |
+| **Password Generator** | Generate strong random passwords with configurable length, charset, and entropy display |
+| **Passphrase Generator** | Generate memorable passphrases from the BIP39 wordlist, with configurable word count and separator |
+| **HMAC Generator** | Compute HMAC-SHA256 and HMAC-SHA512 for a message using a secret key |
+| **TOTP / 2FA Code Generator** | Generate time-based one-time passcodes (RFC 6238) from a Base32 secret, with a live countdown |
+| **Bcrypt Hash & Verify** | Hash passwords with bcrypt at a configurable cost factor, and verify a password against an existing hash |
+| **Argon2 Hash & Verify** | Hash passwords with Argon2 (RFC 9106) at configurable cost parameters, and verify a password against an existing hash |
+| **RSA Key Pair Generator** | Generate an RSA public/private key pair in the browser using the WebCrypto API, exported as PEM |
+| **Certificate Decoder** | Decode a PEM-encoded X.509 certificate into human-readable subject, validity, key, and extension fields |
+| **SSH Key Fingerprint** | Compute the MD5 and SHA256 fingerprints of an OpenSSH public key, client-side |
+| **CSRF Token Generator** | Generate a cryptographically random CSRF token with configurable length and encoding |
+| **Content Security Policy Builder** | Build a Content-Security-Policy header or meta tag by filling in sources for each directive |
+| **robots.txt Generator** | Build a robots.txt file with per-user-agent allow/disallow rules and sitemap references |
+| **.htaccess Generator** | Build an Apache .htaccess file — HTTPS/www redirects, custom redirects, error pages, caching, compression, and access rules |
+| **Nano ID Generator** | Generate bulk Nano IDs with configurable size and alphabet — compact, URL-safe, cryptographically random |
 
 ---
 
@@ -161,7 +177,7 @@ src/
 │   └── tools/
 │       ├── encoders/    # 15 encoder/decoder tools
 │       ├── formatters/  # 15 formatter/minifier tools
-│       ├── generators/  # 3 security/generator tools
+│       ├── generators/  # 19 security/generator tools
 │       └── text/        # 20 regex & text tools
 ├── config/
 │   ├── tools.ts          # Central tool & category registry
@@ -207,7 +223,9 @@ A build-time script (`scripts/build-seo.ts`) generates a static SEO page per too
 | SQL | [sql-formatter](https://github.com/sql-formatter-org/sql-formatter) |
 | Markdown | [marked](https://marked.js.org) + [DOMPurify](https://github.com/cure53/DOMPurify) |
 | Diffing | [diff](https://github.com/kpdecker/jsdiff) |
-| Hashing | [crypto-js](https://github.com/brix/crypto-js) + Web `SubtleCrypto` |
+| Hashing & signing | [crypto-js](https://github.com/brix/crypto-js) (MD5/SHA/HMAC) + Web `SubtleCrypto` (SHA digests, RSA key generation) |
+| Password hashing | [bcryptjs](https://github.com/dcodeIO/bcrypt.js) + [@noble/hashes](https://github.com/paulmillr/noble-hashes) (Argon2) |
+| BIP39 wordlist | [@scure/bip39](https://github.com/paulmillr/scure-bip39) |
 
 ---
 
@@ -218,15 +236,18 @@ npm run test:run        # Single pass — run before every commit
 npm run test:coverage   # With V8 coverage report
 ```
 
-**1356 tests, 0 failures** across 105 test files — every tool component and every lib module is covered.
+**1670 tests, 0 failures** across 137 test files — every tool component and every lib module is covered.
 
 Notable patterns in the test suite:
 
 - `fireEvent.change` for inputs containing `{`, `}`, `[` to avoid `userEvent` key-sequence interpretation
 - Clipboard mocks set **after** `userEvent.setup()` to prevent `userEvent` from overwriting them
 - `waitFor` with explicit timeouts for async tools (JS/TS Formatter, Markdown Formatter) that call Prettier
-- `vi.useFakeTimers()` + `fireEvent.click` for components using `setInterval` (TimestampConverter)
+- `vi.useFakeTimers()` + `fireEvent.click` for components using `setInterval` (TimestampConverter, TOTP Generator)
 - `vi.spyOn(globalThis.crypto, 'randomUUID')` + `afterEach(() => vi.restoreAllMocks())` for UuidGenerator
+- Reduced bcrypt/Argon2 cost parameters in tests (low rounds/memory) so hashing stays fast without weakening the real algorithm under test
+- Cryptographic fixtures (RSA/EC certificates, SSH keys, TOTP codes) generated with `openssl`/`ssh-keygen` and asserted byte-for-byte against their real CLI output
+- `vi.spyOn` on a named ESM export (e.g. `generateRsaKeyPair`) with a controllable pending `Promise` to test async loading states without mocking WebCrypto itself
 
 ---
 
