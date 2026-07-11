@@ -61,6 +61,7 @@ const PassphraseGenerator = lazy(() => import('../components/tools/generators/Pa
 const HmacGenerator = lazy(() => import('../components/tools/generators/HmacGenerator'));
 const TotpGenerator = lazy(() => import('../components/tools/generators/TotpGenerator'));
 const BcryptTool = lazy(() => import('../components/tools/generators/BcryptTool'));
+const Argon2Tool = lazy(() => import('../components/tools/generators/Argon2Tool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -123,4 +124,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'hmac-generator':      <HmacGenerator />,
   'totp-generator':      <TotpGenerator />,
   'bcrypt-tool':         <BcryptTool />,
+  'argon2-tool':         <Argon2Tool />,
 };

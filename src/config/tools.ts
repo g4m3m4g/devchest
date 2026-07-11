@@ -5,7 +5,7 @@ import {
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
-  Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock,
+  Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole,
 } from 'lucide-react';
 
 export interface Tool {
@@ -448,5 +448,12 @@ export const TOOLS: Tool[] = [
     description: 'Hash passwords with bcrypt at a configurable cost factor, and verify a password against an existing hash',
     categoryId: 'generators',
     icon: Lock,
+  },
+  {
+    id: 'argon2-tool',
+    name: 'Argon2 Hash & Verify',
+    description: 'Hash passwords with Argon2 (RFC 9106) at configurable cost parameters, and verify a password against an existing hash',
+    categoryId: 'generators',
+    icon: LockKeyhole,
   },
 ];
