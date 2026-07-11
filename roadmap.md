@@ -83,7 +83,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] TOTP / 2FA Code Generator
 - [x] Bcrypt Hash & Verify
 - [x] Argon2 Hash & Verify
-- [ ] RSA Key Pair Generator (in-browser WebCrypto)
+- [x] RSA Key Pair Generator (in-browser WebCrypto)
 - [ ] Certificate Decoder (PEM → human-readable fields)
 - [ ] SSH Key Fingerprint
 - [ ] CSRF Token Generator

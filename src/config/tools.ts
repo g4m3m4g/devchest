@@ -5,7 +5,7 @@ import {
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
-  Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole,
+  Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare,
 } from 'lucide-react';
 
 export interface Tool {
@@ -455,5 +455,12 @@ export const TOOLS: Tool[] = [
     description: 'Hash passwords with Argon2 (RFC 9106) at configurable cost parameters, and verify a password against an existing hash',
     categoryId: 'generators',
     icon: LockKeyhole,
+  },
+  {
+    id: 'rsa-key-pair-generator',
+    name: 'RSA Key Pair Generator',
+    description: 'Generate an RSA public/private key pair in the browser using the WebCrypto API, exported as PEM',
+    categoryId: 'generators',
+    icon: KeySquare,
   },
 ];
