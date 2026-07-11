@@ -74,22 +74,22 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Hash Generator (MD5, SHA-1/256/512)
 - [x] UUID Generator (v4)
 - [x] Timestamp Converter
-- [ ] UUID v1 / v3 / v5 / v7 Generator
-- [ ] ULID Generator
-- [ ] Nano ID Generator
-- [ ] Password Generator (length, charset, entropy display)
-- [ ] Passphrase Generator (wordlist-based, BIP39)
-- [ ] HMAC Generator (key + message → HMAC-SHA256/512)
-- [ ] TOTP / 2FA Code Generator
-- [ ] Bcrypt Hash & Verify
-- [ ] Argon2 Hash & Verify
-- [ ] RSA Key Pair Generator (in-browser WebCrypto)
-- [ ] Certificate Decoder (PEM → human-readable fields)
-- [ ] SSH Key Fingerprint
-- [ ] CSRF Token Generator
-- [ ] Content Security Policy Builder
-- [ ] robots.txt Generator
-- [ ] .htaccess Generator
+- [x] UUID v1 / v3 / v5 / v7 Generator
+- [x] ULID Generator
+- [x] Nano ID Generator
+- [x] Password Generator (length, charset, entropy display)
+- [x] Passphrase Generator (wordlist-based, BIP39)
+- [x] HMAC Generator (key + message → HMAC-SHA256/512)
+- [x] TOTP / 2FA Code Generator
+- [x] Bcrypt Hash & Verify
+- [x] Argon2 Hash & Verify
+- [x] RSA Key Pair Generator (in-browser WebCrypto)
+- [x] Certificate Decoder (PEM → human-readable fields)
+- [x] SSH Key Fingerprint
+- [x] CSRF Token Generator
+- [x] Content Security Policy Builder
+- [x] robots.txt Generator
+- [x] .htaccess Generator
 
 ---
 

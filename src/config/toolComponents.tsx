@@ -54,6 +54,22 @@ const SentenceCounterTool = lazy(() => import('../components/tools/text/Sentence
 const HashGenerator    = lazy(() => import('../components/tools/generators/HashGenerator'));
 const UuidGenerator    = lazy(() => import('../components/tools/generators/UuidGenerator'));
 const TimestampConverter = lazy(() => import('../components/tools/generators/TimestampConverter'));
+const UuidVersionsGenerator = lazy(() => import('../components/tools/generators/UuidVersionsGenerator'));
+const ULIDGenerator = lazy(() => import('../components/tools/generators/ULIDGenerator'));
+const PasswordGenerator = lazy(() => import('../components/tools/generators/PasswordGenerator'));
+const PassphraseGenerator = lazy(() => import('../components/tools/generators/PassphraseGenerator'));
+const HmacGenerator = lazy(() => import('../components/tools/generators/HmacGenerator'));
+const TotpGenerator = lazy(() => import('../components/tools/generators/TotpGenerator'));
+const BcryptTool = lazy(() => import('../components/tools/generators/BcryptTool'));
+const Argon2Tool = lazy(() => import('../components/tools/generators/Argon2Tool'));
+const RsaKeyPairGenerator = lazy(() => import('../components/tools/generators/RsaKeyPairGenerator'));
+const CertificateDecoder = lazy(() => import('../components/tools/generators/CertificateDecoder'));
+const SshFingerprintTool = lazy(() => import('../components/tools/generators/SshFingerprintTool'));
+const CsrfTokenGenerator = lazy(() => import('../components/tools/generators/CsrfTokenGenerator'));
+const CspBuilder = lazy(() => import('../components/tools/generators/CspBuilder'));
+const RobotsTxtGenerator = lazy(() => import('../components/tools/generators/RobotsTxtGenerator'));
+const HtaccessGenerator = lazy(() => import('../components/tools/generators/HtaccessGenerator'));
+const NanoIdGenerator = lazy(() => import('../components/tools/generators/NanoIdGenerator'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -109,4 +125,20 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'hash-generator':      <HashGenerator />,
   'uuid-generator':      <UuidGenerator />,
   'timestamp-converter': <TimestampConverter />,
+  'uuid-versions-generator': <UuidVersionsGenerator />,
+  'ulid-generator':      <ULIDGenerator />,
+  'password-generator':  <PasswordGenerator />,
+  'passphrase-generator': <PassphraseGenerator />,
+  'hmac-generator':      <HmacGenerator />,
+  'totp-generator':      <TotpGenerator />,
+  'bcrypt-tool':         <BcryptTool />,
+  'argon2-tool':         <Argon2Tool />,
+  'rsa-key-pair-generator': <RsaKeyPairGenerator />,
+  'certificate-decoder': <CertificateDecoder />,
+  'ssh-fingerprint':     <SshFingerprintTool />,
+  'csrf-token-generator': <CsrfTokenGenerator />,
+  'csp-builder':         <CspBuilder />,
+  'robots-txt-generator': <RobotsTxtGenerator />,
+  'htaccess-generator':  <HtaccessGenerator />,
+  'nanoid-generator':    <NanoIdGenerator />,
 };
