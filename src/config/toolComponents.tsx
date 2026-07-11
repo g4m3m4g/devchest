@@ -68,6 +68,7 @@ const SshFingerprintTool = lazy(() => import('../components/tools/generators/Ssh
 const CsrfTokenGenerator = lazy(() => import('../components/tools/generators/CsrfTokenGenerator'));
 const CspBuilder = lazy(() => import('../components/tools/generators/CspBuilder'));
 const RobotsTxtGenerator = lazy(() => import('../components/tools/generators/RobotsTxtGenerator'));
+const HtaccessGenerator = lazy(() => import('../components/tools/generators/HtaccessGenerator'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -137,4 +138,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'csrf-token-generator': <CsrfTokenGenerator />,
   'csp-builder':         <CspBuilder />,
   'robots-txt-generator': <RobotsTxtGenerator />,
+  'htaccess-generator':  <HtaccessGenerator />,
 };

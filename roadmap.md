@@ -89,7 +89,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] CSRF Token Generator
 - [x] Content Security Policy Builder
 - [x] robots.txt Generator
-- [ ] .htaccess Generator
+- [x] .htaccess Generator
 
 ---
 
