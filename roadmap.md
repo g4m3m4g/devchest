@@ -88,7 +88,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] SSH Key Fingerprint
 - [x] CSRF Token Generator
 - [x] Content Security Policy Builder
-- [ ] robots.txt Generator
+- [x] robots.txt Generator
 - [ ] .htaccess Generator
 
 ---

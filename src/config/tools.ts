@@ -5,7 +5,7 @@ import {
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
-  Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf,
+  Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot,
 } from 'lucide-react';
 
 export interface Tool {
@@ -490,5 +490,12 @@ export const TOOLS: Tool[] = [
     description: 'Build a Content-Security-Policy header or meta tag by filling in sources for each directive',
     categoryId: 'generators',
     icon: ShieldHalf,
+  },
+  {
+    id: 'robots-txt-generator',
+    name: 'robots.txt Generator',
+    description: 'Build a robots.txt file with per-user-agent allow/disallow rules and sitemap references',
+    categoryId: 'generators',
+    icon: Bot,
   },
 ];
