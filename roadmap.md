@@ -76,7 +76,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Timestamp Converter
 - [x] UUID v1 / v3 / v5 / v7 Generator
 - [x] ULID Generator
-- [ ] Nano ID Generator
+- [x] Nano ID Generator
 - [x] Password Generator (length, charset, entropy display)
 - [x] Passphrase Generator (wordlist-based, BIP39)
 - [x] HMAC Generator (key + message → HMAC-SHA256/512)

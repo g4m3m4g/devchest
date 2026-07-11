@@ -69,6 +69,7 @@ const CsrfTokenGenerator = lazy(() => import('../components/tools/generators/Csr
 const CspBuilder = lazy(() => import('../components/tools/generators/CspBuilder'));
 const RobotsTxtGenerator = lazy(() => import('../components/tools/generators/RobotsTxtGenerator'));
 const HtaccessGenerator = lazy(() => import('../components/tools/generators/HtaccessGenerator'));
+const NanoIdGenerator = lazy(() => import('../components/tools/generators/NanoIdGenerator'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -139,4 +140,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'csp-builder':         <CspBuilder />,
   'robots-txt-generator': <RobotsTxtGenerator />,
   'htaccess-generator':  <HtaccessGenerator />,
+  'nanoid-generator':    <NanoIdGenerator />,
 };

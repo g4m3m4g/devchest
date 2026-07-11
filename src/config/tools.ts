@@ -5,7 +5,7 @@ import {
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
-  Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog,
+  Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
 } from 'lucide-react';
 
 export interface Tool {
@@ -504,5 +504,12 @@ export const TOOLS: Tool[] = [
     description: 'Build an Apache .htaccess file — HTTPS/www redirects, custom redirects, error pages, caching, compression, and access rules',
     categoryId: 'generators',
     icon: FileCog,
+  },
+  {
+    id: 'nanoid-generator',
+    name: 'Nano ID Generator',
+    description: 'Generate bulk Nano IDs with configurable size and alphabet — compact, URL-safe, cryptographically random',
+    categoryId: 'generators',
+    icon: Dna,
   },
 ];
