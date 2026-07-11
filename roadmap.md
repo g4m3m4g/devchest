@@ -78,7 +78,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] ULID Generator
 - [ ] Nano ID Generator
 - [x] Password Generator (length, charset, entropy display)
-- [ ] Passphrase Generator (wordlist-based, BIP39)
+- [x] Passphrase Generator (wordlist-based, BIP39)
 - [ ] HMAC Generator (key + message → HMAC-SHA256/512)
 - [ ] TOTP / 2FA Code Generator
 - [ ] Bcrypt Hash & Verify

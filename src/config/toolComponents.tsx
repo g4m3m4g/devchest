@@ -57,6 +57,7 @@ const TimestampConverter = lazy(() => import('../components/tools/generators/Tim
 const UuidVersionsGenerator = lazy(() => import('../components/tools/generators/UuidVersionsGenerator'));
 const ULIDGenerator = lazy(() => import('../components/tools/generators/ULIDGenerator'));
 const PasswordGenerator = lazy(() => import('../components/tools/generators/PasswordGenerator'));
+const PassphraseGenerator = lazy(() => import('../components/tools/generators/PassphraseGenerator'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -115,4 +116,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'uuid-versions-generator': <UuidVersionsGenerator />,
   'ulid-generator':      <ULIDGenerator />,
   'password-generator':  <PasswordGenerator />,
+  'passphrase-generator': <PassphraseGenerator />,
 };

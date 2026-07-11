@@ -5,7 +5,7 @@ import {
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
-  Boxes, Barcode, KeyRound,
+  Boxes, Barcode, KeyRound, BookText,
 } from 'lucide-react';
 
 export interface Tool {
@@ -420,5 +420,12 @@ export const TOOLS: Tool[] = [
     description: 'Generate strong random passwords with configurable length, charset, and entropy display',
     categoryId: 'generators',
     icon: KeyRound,
+  },
+  {
+    id: 'passphrase-generator',
+    name: 'Passphrase Generator',
+    description: 'Generate memorable passphrases from the BIP39 wordlist, with configurable word count and separator',
+    categoryId: 'generators',
+    icon: BookText,
   },
 ];
