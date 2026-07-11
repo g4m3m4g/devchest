@@ -5,7 +5,7 @@ import {
   Code2, Link, Key, Ampersand, Binary, Hexagon, Calculator, Radio, Languages, Mail, Shuffle, FileArchive, Signature, FileSearch,
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
-  Boxes, Barcode, KeyRound, BookText, ShieldCheck,
+  Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset,
 } from 'lucide-react';
 
 export interface Tool {
@@ -434,5 +434,12 @@ export const TOOLS: Tool[] = [
     description: 'Compute HMAC-SHA256 and HMAC-SHA512 for a message using a secret key',
     categoryId: 'generators',
     icon: ShieldCheck,
+  },
+  {
+    id: 'totp-generator',
+    name: 'TOTP / 2FA Code Generator',
+    description: 'Generate time-based one-time passcodes (RFC 6238) from a Base32 secret, with a live countdown',
+    categoryId: 'generators',
+    icon: TimerReset,
   },
 ];

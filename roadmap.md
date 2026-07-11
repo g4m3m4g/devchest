@@ -80,7 +80,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Password Generator (length, charset, entropy display)
 - [x] Passphrase Generator (wordlist-based, BIP39)
 - [x] HMAC Generator (key + message → HMAC-SHA256/512)
-- [ ] TOTP / 2FA Code Generator
+- [x] TOTP / 2FA Code Generator
 - [ ] Bcrypt Hash & Verify
 - [ ] Argon2 Hash & Verify
 - [ ] RSA Key Pair Generator (in-browser WebCrypto)

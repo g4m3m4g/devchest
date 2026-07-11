@@ -59,6 +59,7 @@ const ULIDGenerator = lazy(() => import('../components/tools/generators/ULIDGene
 const PasswordGenerator = lazy(() => import('../components/tools/generators/PasswordGenerator'));
 const PassphraseGenerator = lazy(() => import('../components/tools/generators/PassphraseGenerator'));
 const HmacGenerator = lazy(() => import('../components/tools/generators/HmacGenerator'));
+const TotpGenerator = lazy(() => import('../components/tools/generators/TotpGenerator'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -119,4 +120,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'password-generator':  <PasswordGenerator />,
   'passphrase-generator': <PassphraseGenerator />,
   'hmac-generator':      <HmacGenerator />,
+  'totp-generator':      <TotpGenerator />,
 };
