@@ -70,6 +70,11 @@ const CspBuilder = lazy(() => import('../components/tools/generators/CspBuilder'
 const RobotsTxtGenerator = lazy(() => import('../components/tools/generators/RobotsTxtGenerator'));
 const HtaccessGenerator = lazy(() => import('../components/tools/generators/HtaccessGenerator'));
 const NanoIdGenerator = lazy(() => import('../components/tools/generators/NanoIdGenerator'));
+const UnitConverterTool = lazy(() => import('../components/tools/numbers/UnitConverterTool'));
+const CurrencyConverterTool = lazy(() => import('../components/tools/numbers/CurrencyConverterTool'));
+const PercentageCalculatorTool = lazy(() => import('../components/tools/numbers/PercentageCalculatorTool'));
+const AspectRatioCalculatorTool = lazy(() => import('../components/tools/numbers/AspectRatioCalculatorTool'));
+const BitwiseCalculatorTool = lazy(() => import('../components/tools/numbers/BitwiseCalculatorTool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -141,4 +146,9 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'robots-txt-generator': <RobotsTxtGenerator />,
   'htaccess-generator':  <HtaccessGenerator />,
   'nanoid-generator':    <NanoIdGenerator />,
+  'unit-converter':      <UnitConverterTool />,
+  'currency-converter':  <CurrencyConverterTool />,
+  'percentage-calculator': <PercentageCalculatorTool />,
+  'aspect-ratio-calculator': <AspectRatioCalculatorTool />,
+  'bitwise-calculator':  <BitwiseCalculatorTool />,
 };

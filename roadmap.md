@@ -114,12 +114,12 @@ Tools are grouped by category. Checked items are already shipped.
 
 ## Numbers & Math
 
-- [ ] Number Base Converter (bin / oct / dec / hex)
-- [ ] Unit Converter (length, weight, temperature, area, volume)
-- [ ] Currency Converter (latest rates via free API)
-- [ ] Percentage Calculator
-- [ ] Aspect Ratio Calculator
-- [ ] Bitwise Calculator
+- [x] Number Base Converter (bin / oct / dec / hex)
+- [x] Unit Converter (length, weight, temperature, area, volume)
+- [x] Currency Converter (latest rates via free API)
+- [x] Percentage Calculator
+- [x] Aspect Ratio Calculator
+- [x] Bitwise Calculator
 - [ ] IEEE 754 Float Visualizer
 - [ ] Roman Numeral Converter
 - [ ] Big Number Calculator (arbitrary precision)

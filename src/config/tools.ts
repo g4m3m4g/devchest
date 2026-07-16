@@ -6,6 +6,7 @@ import {
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
+  Ruler, Coins, Percent, Proportions, Cpu,
 } from 'lucide-react';
 
 export interface Tool {
@@ -26,6 +27,7 @@ export const CATEGORIES: Category[] = [
   { id: 'encoders', name: 'Encoders & Decoders' },
   { id: 'text', name: 'Regex & Text' },
   { id: 'generators', name: 'Security & Generators' },
+  { id: 'numbers', name: 'Numbers & Math' },
 ];
 
 export const TOOLS: Tool[] = [
@@ -511,5 +513,40 @@ export const TOOLS: Tool[] = [
     description: 'Generate bulk Nano IDs with configurable size and alphabet — compact, URL-safe, cryptographically random',
     categoryId: 'generators',
     icon: Dna,
+  },
+  {
+    id: 'unit-converter',
+    name: 'Unit Converter',
+    description: 'Convert between length, weight, temperature, area, and volume units',
+    categoryId: 'numbers',
+    icon: Ruler,
+  },
+  {
+    id: 'currency-converter',
+    name: 'Currency Converter',
+    description: 'Convert between world currencies using live exchange rates',
+    categoryId: 'numbers',
+    icon: Coins,
+  },
+  {
+    id: 'percentage-calculator',
+    name: 'Percentage Calculator',
+    description: 'Calculate percentages, percent-of values, and percentage change',
+    categoryId: 'numbers',
+    icon: Percent,
+  },
+  {
+    id: 'aspect-ratio-calculator',
+    name: 'Aspect Ratio Calculator',
+    description: 'Simplify a width/height ratio and solve for a missing dimension',
+    categoryId: 'numbers',
+    icon: Proportions,
+  },
+  {
+    id: 'bitwise-calculator',
+    name: 'Bitwise Calculator',
+    description: 'Compute AND, OR, XOR, NOT, and bit shifts with a binary result view',
+    categoryId: 'numbers',
+    icon: Cpu,
   },
 ];
