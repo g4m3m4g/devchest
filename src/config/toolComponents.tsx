@@ -72,6 +72,7 @@ const HtaccessGenerator = lazy(() => import('../components/tools/generators/Htac
 const NanoIdGenerator = lazy(() => import('../components/tools/generators/NanoIdGenerator'));
 const UnitConverterTool = lazy(() => import('../components/tools/numbers/UnitConverterTool'));
 const CurrencyConverterTool = lazy(() => import('../components/tools/numbers/CurrencyConverterTool'));
+const PercentageCalculatorTool = lazy(() => import('../components/tools/numbers/PercentageCalculatorTool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -145,4 +146,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'nanoid-generator':    <NanoIdGenerator />,
   'unit-converter':      <UnitConverterTool />,
   'currency-converter':  <CurrencyConverterTool />,
+  'percentage-calculator': <PercentageCalculatorTool />,
 };

@@ -6,7 +6,7 @@ import {
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
-  Ruler, Coins,
+  Ruler, Coins, Percent,
 } from 'lucide-react';
 
 export interface Tool {
@@ -527,5 +527,12 @@ export const TOOLS: Tool[] = [
     description: 'Convert between world currencies using live exchange rates',
     categoryId: 'numbers',
     icon: Coins,
+  },
+  {
+    id: 'percentage-calculator',
+    name: 'Percentage Calculator',
+    description: 'Calculate percentages, percent-of values, and percentage change',
+    categoryId: 'numbers',
+    icon: Percent,
   },
 ];
