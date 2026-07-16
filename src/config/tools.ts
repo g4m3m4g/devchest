@@ -6,7 +6,7 @@ import {
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
-  Ruler, Coins, Percent,
+  Ruler, Coins, Percent, Proportions,
 } from 'lucide-react';
 
 export interface Tool {
@@ -534,5 +534,12 @@ export const TOOLS: Tool[] = [
     description: 'Calculate percentages, percent-of values, and percentage change',
     categoryId: 'numbers',
     icon: Percent,
+  },
+  {
+    id: 'aspect-ratio-calculator',
+    name: 'Aspect Ratio Calculator',
+    description: 'Simplify a width/height ratio and solve for a missing dimension',
+    categoryId: 'numbers',
+    icon: Proportions,
   },
 ];

@@ -73,6 +73,7 @@ const NanoIdGenerator = lazy(() => import('../components/tools/generators/NanoId
 const UnitConverterTool = lazy(() => import('../components/tools/numbers/UnitConverterTool'));
 const CurrencyConverterTool = lazy(() => import('../components/tools/numbers/CurrencyConverterTool'));
 const PercentageCalculatorTool = lazy(() => import('../components/tools/numbers/PercentageCalculatorTool'));
+const AspectRatioCalculatorTool = lazy(() => import('../components/tools/numbers/AspectRatioCalculatorTool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -147,4 +148,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'unit-converter':      <UnitConverterTool />,
   'currency-converter':  <CurrencyConverterTool />,
   'percentage-calculator': <PercentageCalculatorTool />,
+  'aspect-ratio-calculator': <AspectRatioCalculatorTool />,
 };

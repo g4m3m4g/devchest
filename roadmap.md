@@ -118,7 +118,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Unit Converter (length, weight, temperature, area, volume)
 - [x] Currency Converter (latest rates via free API)
 - [x] Percentage Calculator
-- [ ] Aspect Ratio Calculator
+- [x] Aspect Ratio Calculator
 - [ ] Bitwise Calculator
 - [ ] IEEE 754 Float Visualizer
 - [ ] Roman Numeral Converter
