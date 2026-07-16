@@ -119,7 +119,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Currency Converter (latest rates via free API)
 - [x] Percentage Calculator
 - [x] Aspect Ratio Calculator
-- [ ] Bitwise Calculator
+- [x] Bitwise Calculator
 - [ ] IEEE 754 Float Visualizer
 - [ ] Roman Numeral Converter
 - [ ] Big Number Calculator (arbitrary precision)

@@ -6,7 +6,7 @@ import {
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
-  Ruler, Coins, Percent, Proportions,
+  Ruler, Coins, Percent, Proportions, Cpu,
 } from 'lucide-react';
 
 export interface Tool {
@@ -541,5 +541,12 @@ export const TOOLS: Tool[] = [
     description: 'Simplify a width/height ratio and solve for a missing dimension',
     categoryId: 'numbers',
     icon: Proportions,
+  },
+  {
+    id: 'bitwise-calculator',
+    name: 'Bitwise Calculator',
+    description: 'Compute AND, OR, XOR, NOT, and bit shifts with a binary result view',
+    categoryId: 'numbers',
+    icon: Cpu,
   },
 ];
