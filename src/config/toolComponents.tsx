@@ -71,6 +71,7 @@ const RobotsTxtGenerator = lazy(() => import('../components/tools/generators/Rob
 const HtaccessGenerator = lazy(() => import('../components/tools/generators/HtaccessGenerator'));
 const NanoIdGenerator = lazy(() => import('../components/tools/generators/NanoIdGenerator'));
 const UnitConverterTool = lazy(() => import('../components/tools/numbers/UnitConverterTool'));
+const CurrencyConverterTool = lazy(() => import('../components/tools/numbers/CurrencyConverterTool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -143,4 +144,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'htaccess-generator':  <HtaccessGenerator />,
   'nanoid-generator':    <NanoIdGenerator />,
   'unit-converter':      <UnitConverterTool />,
+  'currency-converter':  <CurrencyConverterTool />,
 };

@@ -6,7 +6,7 @@ import {
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
-  Ruler,
+  Ruler, Coins,
 } from 'lucide-react';
 
 export interface Tool {
@@ -520,5 +520,12 @@ export const TOOLS: Tool[] = [
     description: 'Convert between length, weight, temperature, area, and volume units',
     categoryId: 'numbers',
     icon: Ruler,
+  },
+  {
+    id: 'currency-converter',
+    name: 'Currency Converter',
+    description: 'Convert between world currencies using live exchange rates',
+    categoryId: 'numbers',
+    icon: Coins,
   },
 ];
