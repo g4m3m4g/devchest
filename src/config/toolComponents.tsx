@@ -70,6 +70,7 @@ const CspBuilder = lazy(() => import('../components/tools/generators/CspBuilder'
 const RobotsTxtGenerator = lazy(() => import('../components/tools/generators/RobotsTxtGenerator'));
 const HtaccessGenerator = lazy(() => import('../components/tools/generators/HtaccessGenerator'));
 const NanoIdGenerator = lazy(() => import('../components/tools/generators/NanoIdGenerator'));
+const UnitConverterTool = lazy(() => import('../components/tools/numbers/UnitConverterTool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -141,4 +142,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'robots-txt-generator': <RobotsTxtGenerator />,
   'htaccess-generator':  <HtaccessGenerator />,
   'nanoid-generator':    <NanoIdGenerator />,
+  'unit-converter':      <UnitConverterTool />,
 };

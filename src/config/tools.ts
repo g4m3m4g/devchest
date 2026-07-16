@@ -6,6 +6,7 @@ import {
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
+  Ruler,
 } from 'lucide-react';
 
 export interface Tool {
@@ -26,6 +27,7 @@ export const CATEGORIES: Category[] = [
   { id: 'encoders', name: 'Encoders & Decoders' },
   { id: 'text', name: 'Regex & Text' },
   { id: 'generators', name: 'Security & Generators' },
+  { id: 'numbers', name: 'Numbers & Math' },
 ];
 
 export const TOOLS: Tool[] = [
@@ -511,5 +513,12 @@ export const TOOLS: Tool[] = [
     description: 'Generate bulk Nano IDs with configurable size and alphabet — compact, URL-safe, cryptographically random',
     categoryId: 'generators',
     icon: Dna,
+  },
+  {
+    id: 'unit-converter',
+    name: 'Unit Converter',
+    description: 'Convert between length, weight, temperature, area, and volume units',
+    categoryId: 'numbers',
+    icon: Ruler,
   },
 ];
