@@ -120,9 +120,9 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Percentage Calculator
 - [x] Aspect Ratio Calculator
 - [x] Bitwise Calculator
-- [ ] IEEE 754 Float Visualizer
-- [ ] Roman Numeral Converter
-- [ ] Big Number Calculator (arbitrary precision)
+- [x] IEEE 754 Float Visualizer
+- [x] Roman Numeral Converter
+- [x] Big Number Calculator (arbitrary precision)
 - [ ] Fibonacci / Prime Sequence Generator
 - [ ] Matrix Calculator
 - [ ] Statistics Calculator (mean, median, mode, std dev)
