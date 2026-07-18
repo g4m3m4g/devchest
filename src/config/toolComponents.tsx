@@ -76,6 +76,7 @@ const PercentageCalculatorTool = lazy(() => import('../components/tools/numbers/
 const AspectRatioCalculatorTool = lazy(() => import('../components/tools/numbers/AspectRatioCalculatorTool'));
 const BitwiseCalculatorTool = lazy(() => import('../components/tools/numbers/BitwiseCalculatorTool'));
 const IeeeFloatVisualizerTool = lazy(() => import('../components/tools/numbers/IeeeFloatVisualizerTool'));
+const RomanNumeralConverterTool = lazy(() => import('../components/tools/numbers/RomanNumeralConverterTool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -153,4 +154,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'aspect-ratio-calculator': <AspectRatioCalculatorTool />,
   'bitwise-calculator':  <BitwiseCalculatorTool />,
   'ieee754-visualizer':  <IeeeFloatVisualizerTool />,
+  'roman-numeral-converter': <RomanNumeralConverterTool />,
 };

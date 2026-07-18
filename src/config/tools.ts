@@ -6,7 +6,7 @@ import {
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
-  Ruler, Coins, Percent, Proportions, Cpu, Waves,
+  Ruler, Coins, Percent, Proportions, Cpu, Waves, Landmark,
 } from 'lucide-react';
 
 export interface Tool {
@@ -555,5 +555,12 @@ export const TOOLS: Tool[] = [
     description: 'Break a floating-point number down into its sign, exponent, and mantissa bits',
     categoryId: 'numbers',
     icon: Waves,
+  },
+  {
+    id: 'roman-numeral-converter',
+    name: 'Roman Numeral Converter',
+    description: 'Convert between Arabic numbers and Roman numerals (1–3999)',
+    categoryId: 'numbers',
+    icon: Landmark,
   },
 ];
