@@ -6,7 +6,7 @@ import {
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
-  Ruler, Coins, Percent, Proportions, Cpu, Waves, Landmark,
+  Ruler, Coins, Percent, Proportions, Cpu, Waves, Landmark, Sigma,
 } from 'lucide-react';
 
 export interface Tool {
@@ -562,5 +562,12 @@ export const TOOLS: Tool[] = [
     description: 'Convert between Arabic numbers and Roman numerals (1–3999)',
     categoryId: 'numbers',
     icon: Landmark,
+  },
+  {
+    id: 'big-number-calculator',
+    name: 'Big Number Calculator',
+    description: 'Exact arbitrary-precision integer arithmetic — no floating-point rounding',
+    categoryId: 'numbers',
+    icon: Sigma,
   },
 ];
