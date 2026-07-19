@@ -125,7 +125,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Big Number Calculator (arbitrary precision)
 - [x] Fibonacci / Prime Sequence Generator
 - [x] Matrix Calculator
-- [ ] Statistics Calculator (mean, median, mode, std dev)
+- [x] Statistics Calculator (mean, median, mode, std dev)
 - [ ] Color Math (mix, contrast ratio, WCAG check)
 
 ---

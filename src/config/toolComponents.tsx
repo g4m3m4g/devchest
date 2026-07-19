@@ -80,6 +80,7 @@ const RomanNumeralConverterTool = lazy(() => import('../components/tools/numbers
 const BigNumberCalculatorTool = lazy(() => import('../components/tools/numbers/BigNumberCalculatorTool'));
 const FibonacciPrimeGeneratorTool = lazy(() => import('../components/tools/numbers/FibonacciPrimeGeneratorTool'));
 const MatrixCalculatorTool = lazy(() => import('../components/tools/numbers/MatrixCalculatorTool'));
+const StatisticsCalculatorTool = lazy(() => import('../components/tools/numbers/StatisticsCalculatorTool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -161,4 +162,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'big-number-calculator': <BigNumberCalculatorTool />,
   'fibonacci-prime-generator': <FibonacciPrimeGeneratorTool />,
   'matrix-calculator': <MatrixCalculatorTool />,
+  'statistics-calculator': <StatisticsCalculatorTool />,
 };
