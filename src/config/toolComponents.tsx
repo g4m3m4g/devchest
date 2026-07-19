@@ -78,6 +78,7 @@ const BitwiseCalculatorTool = lazy(() => import('../components/tools/numbers/Bit
 const IeeeFloatVisualizerTool = lazy(() => import('../components/tools/numbers/IeeeFloatVisualizerTool'));
 const RomanNumeralConverterTool = lazy(() => import('../components/tools/numbers/RomanNumeralConverterTool'));
 const BigNumberCalculatorTool = lazy(() => import('../components/tools/numbers/BigNumberCalculatorTool'));
+const FibonacciPrimeGeneratorTool = lazy(() => import('../components/tools/numbers/FibonacciPrimeGeneratorTool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -157,4 +158,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'ieee754-visualizer':  <IeeeFloatVisualizerTool />,
   'roman-numeral-converter': <RomanNumeralConverterTool />,
   'big-number-calculator': <BigNumberCalculatorTool />,
+  'fibonacci-prime-generator': <FibonacciPrimeGeneratorTool />,
 };

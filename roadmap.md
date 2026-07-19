@@ -123,7 +123,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] IEEE 754 Float Visualizer
 - [x] Roman Numeral Converter
 - [x] Big Number Calculator (arbitrary precision)
-- [ ] Fibonacci / Prime Sequence Generator
+- [x] Fibonacci / Prime Sequence Generator
 - [ ] Matrix Calculator
 - [ ] Statistics Calculator (mean, median, mode, std dev)
 - [ ] Color Math (mix, contrast ratio, WCAG check)
