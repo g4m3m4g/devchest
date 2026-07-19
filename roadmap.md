@@ -126,7 +126,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Fibonacci / Prime Sequence Generator
 - [x] Matrix Calculator
 - [x] Statistics Calculator (mean, median, mode, std dev)
-- [ ] Color Math (mix, contrast ratio, WCAG check)
+- [x] Color Math (mix, contrast ratio, WCAG check)
 
 ---
 

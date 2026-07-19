@@ -6,7 +6,7 @@ import {
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
-  Ruler, Coins, Percent, Proportions, Cpu, Waves, Landmark, Sigma, Repeat, Grid3x3, BarChart3,
+  Ruler, Coins, Percent, Proportions, Cpu, Waves, Landmark, Sigma, Repeat, Grid3x3, BarChart3, Palette,
 } from 'lucide-react';
 
 export interface Tool {
@@ -590,5 +590,12 @@ export const TOOLS: Tool[] = [
     description: 'Compute mean, median, mode, standard deviation, and more from a list of numbers',
     categoryId: 'numbers',
     icon: BarChart3,
+  },
+  {
+    id: 'color-math',
+    name: 'Color Math',
+    description: 'Mix two colors, and check WCAG contrast ratio and pass/fail levels',
+    categoryId: 'numbers',
+    icon: Palette,
   },
 ];
