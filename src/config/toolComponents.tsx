@@ -78,6 +78,10 @@ const BitwiseCalculatorTool = lazy(() => import('../components/tools/numbers/Bit
 const IeeeFloatVisualizerTool = lazy(() => import('../components/tools/numbers/IeeeFloatVisualizerTool'));
 const RomanNumeralConverterTool = lazy(() => import('../components/tools/numbers/RomanNumeralConverterTool'));
 const BigNumberCalculatorTool = lazy(() => import('../components/tools/numbers/BigNumberCalculatorTool'));
+const FibonacciPrimeGeneratorTool = lazy(() => import('../components/tools/numbers/FibonacciPrimeGeneratorTool'));
+const MatrixCalculatorTool = lazy(() => import('../components/tools/numbers/MatrixCalculatorTool'));
+const StatisticsCalculatorTool = lazy(() => import('../components/tools/numbers/StatisticsCalculatorTool'));
+const ColorMathTool = lazy(() => import('../components/tools/numbers/ColorMathTool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -157,4 +161,8 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'ieee754-visualizer':  <IeeeFloatVisualizerTool />,
   'roman-numeral-converter': <RomanNumeralConverterTool />,
   'big-number-calculator': <BigNumberCalculatorTool />,
+  'fibonacci-prime-generator': <FibonacciPrimeGeneratorTool />,
+  'matrix-calculator': <MatrixCalculatorTool />,
+  'statistics-calculator': <StatisticsCalculatorTool />,
+  'color-math': <ColorMathTool />,
 };
