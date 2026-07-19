@@ -124,7 +124,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] Roman Numeral Converter
 - [x] Big Number Calculator (arbitrary precision)
 - [x] Fibonacci / Prime Sequence Generator
-- [ ] Matrix Calculator
+- [x] Matrix Calculator
 - [ ] Statistics Calculator (mean, median, mode, std dev)
 - [ ] Color Math (mix, contrast ratio, WCAG check)
 

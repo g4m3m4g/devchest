@@ -6,7 +6,7 @@ import {
   Search, Type, ArrowLeftRight,
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
-  Ruler, Coins, Percent, Proportions, Cpu, Waves, Landmark, Sigma, Repeat,
+  Ruler, Coins, Percent, Proportions, Cpu, Waves, Landmark, Sigma, Repeat, Grid3x3,
 } from 'lucide-react';
 
 export interface Tool {
@@ -576,5 +576,12 @@ export const TOOLS: Tool[] = [
     description: 'Generate the first N Fibonacci numbers, or list primes up to a limit',
     categoryId: 'numbers',
     icon: Repeat,
+  },
+  {
+    id: 'matrix-calculator',
+    name: 'Matrix Calculator',
+    description: 'Add, subtract, multiply, transpose matrices, and compute determinant/inverse for square matrices',
+    categoryId: 'numbers',
+    icon: Grid3x3,
   },
 ];
