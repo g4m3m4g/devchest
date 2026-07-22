@@ -82,6 +82,7 @@ const FibonacciPrimeGeneratorTool = lazy(() => import('../components/tools/numbe
 const MatrixCalculatorTool = lazy(() => import('../components/tools/numbers/MatrixCalculatorTool'));
 const StatisticsCalculatorTool = lazy(() => import('../components/tools/numbers/StatisticsCalculatorTool'));
 const ColorMathTool = lazy(() => import('../components/tools/numbers/ColorMathTool'));
+const JsonToTypeScriptTool = lazy(() => import('../components/tools/data/JsonToTypeScriptTool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -165,4 +166,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'matrix-calculator': <MatrixCalculatorTool />,
   'statistics-calculator': <StatisticsCalculatorTool />,
   'color-math': <ColorMathTool />,
+  'json-to-typescript': <JsonToTypeScriptTool />,
 };

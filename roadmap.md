@@ -149,7 +149,7 @@ Tools are grouped by category. Checked items are already shipped.
 
 ## Data & Code
 
-- [ ] JSON to TypeScript Interface Generator
+- [x] JSON to TypeScript Interface Generator
 - [ ] JSON to Zod Schema Generator
 - [ ] JSON to CSV Converter
 - [ ] CSV to JSON Converter
