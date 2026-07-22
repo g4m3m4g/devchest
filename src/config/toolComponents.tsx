@@ -82,6 +82,12 @@ const FibonacciPrimeGeneratorTool = lazy(() => import('../components/tools/numbe
 const MatrixCalculatorTool = lazy(() => import('../components/tools/numbers/MatrixCalculatorTool'));
 const StatisticsCalculatorTool = lazy(() => import('../components/tools/numbers/StatisticsCalculatorTool'));
 const ColorMathTool = lazy(() => import('../components/tools/numbers/ColorMathTool'));
+const JsonToTypeScriptTool = lazy(() => import('../components/tools/data/JsonToTypeScriptTool'));
+const JsonToZodTool = lazy(() => import('../components/tools/data/JsonToZodTool'));
+const JsonToCsvTool = lazy(() => import('../components/tools/data/JsonToCsvTool'));
+const CsvToJsonTool = lazy(() => import('../components/tools/data/CsvToJsonTool'));
+const JsonPathTesterTool = lazy(() => import('../components/tools/data/JsonPathTesterTool'));
+const JsonSchemaValidatorTool = lazy(() => import('../components/tools/data/JsonSchemaValidatorTool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -165,4 +171,10 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'matrix-calculator': <MatrixCalculatorTool />,
   'statistics-calculator': <StatisticsCalculatorTool />,
   'color-math': <ColorMathTool />,
+  'json-to-typescript': <JsonToTypeScriptTool />,
+  'json-to-zod': <JsonToZodTool />,
+  'json-to-csv': <JsonToCsvTool />,
+  'csv-to-json': <CsvToJsonTool />,
+  'json-path-tester': <JsonPathTesterTool />,
+  'json-schema-validator': <JsonSchemaValidatorTool />,
 };

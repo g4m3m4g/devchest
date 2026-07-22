@@ -149,12 +149,12 @@ Tools are grouped by category. Checked items are already shipped.
 
 ## Data & Code
 
-- [ ] JSON to TypeScript Interface Generator
-- [ ] JSON to Zod Schema Generator
-- [ ] JSON to CSV Converter
-- [ ] CSV to JSON Converter
-- [ ] JSON Path Tester (JSONPath / jq-style queries)
-- [ ] JSON Schema Validator
+- [x] JSON to TypeScript Interface Generator
+- [x] JSON to Zod Schema Generator
+- [x] JSON to CSV Converter
+- [x] CSV to JSON Converter
+- [x] JSON Path Tester (JSONPath / jq-style queries)
+- [x] JSON Schema Validator
 - [ ] OpenAPI / Swagger Validator
 - [ ] XML to JSON Converter
 - [ ] cron Expression Parser & Builder

@@ -7,6 +7,7 @@ import {
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
   Ruler, Coins, Percent, Proportions, Cpu, Waves, Landmark, Sigma, Repeat, Grid3x3, BarChart3, Palette,
+  FileType2, ShieldQuestion, FileSpreadsheet, FileJson2, Route, ShieldCheck as SchemaCheck,
 } from 'lucide-react';
 
 export interface Tool {
@@ -28,6 +29,7 @@ export const CATEGORIES: Category[] = [
   { id: 'text', name: 'Regex & Text' },
   { id: 'generators', name: 'Security & Generators' },
   { id: 'numbers', name: 'Numbers & Math' },
+  { id: 'data', name: 'Data & Code' },
 ];
 
 export const TOOLS: Tool[] = [
@@ -597,5 +599,47 @@ export const TOOLS: Tool[] = [
     description: 'Mix two colors, and check WCAG contrast ratio and pass/fail levels',
     categoryId: 'numbers',
     icon: Palette,
+  },
+  {
+    id: 'json-to-typescript',
+    name: 'JSON to TypeScript Interface Generator',
+    description: 'Infer TypeScript interfaces from a JSON payload, including nested objects and arrays',
+    categoryId: 'data',
+    icon: FileType2,
+  },
+  {
+    id: 'json-to-zod',
+    name: 'JSON to Zod Schema Generator',
+    description: 'Infer a Zod validation schema from a JSON payload, including nested objects and arrays',
+    categoryId: 'data',
+    icon: ShieldQuestion,
+  },
+  {
+    id: 'json-to-csv',
+    name: 'JSON to CSV Converter',
+    description: 'Convert a JSON array of objects into CSV, flattening nested fields with dot notation',
+    categoryId: 'data',
+    icon: FileSpreadsheet,
+  },
+  {
+    id: 'csv-to-json',
+    name: 'CSV to JSON Converter',
+    description: 'Convert CSV with a header row into a JSON array of objects, with type coercion for numbers and booleans',
+    categoryId: 'data',
+    icon: FileJson2,
+  },
+  {
+    id: 'json-path-tester',
+    name: 'JSON Path Tester',
+    description: 'Evaluate a JSONPath query against a JSON document and inspect the matched values',
+    categoryId: 'data',
+    icon: Route,
+  },
+  {
+    id: 'json-schema-validator',
+    name: 'JSON Schema Validator',
+    description: 'Validate a JSON instance against a JSON Schema and list every violation with its path',
+    categoryId: 'data',
+    icon: SchemaCheck,
   },
 ];
