@@ -85,6 +85,7 @@ const ColorMathTool = lazy(() => import('../components/tools/numbers/ColorMathTo
 const JsonToTypeScriptTool = lazy(() => import('../components/tools/data/JsonToTypeScriptTool'));
 const JsonToZodTool = lazy(() => import('../components/tools/data/JsonToZodTool'));
 const JsonToCsvTool = lazy(() => import('../components/tools/data/JsonToCsvTool'));
+const CsvToJsonTool = lazy(() => import('../components/tools/data/CsvToJsonTool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -171,4 +172,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-to-typescript': <JsonToTypeScriptTool />,
   'json-to-zod': <JsonToZodTool />,
   'json-to-csv': <JsonToCsvTool />,
+  'csv-to-json': <CsvToJsonTool />,
 };
