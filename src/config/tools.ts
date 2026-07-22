@@ -7,7 +7,7 @@ import {
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
   Ruler, Coins, Percent, Proportions, Cpu, Waves, Landmark, Sigma, Repeat, Grid3x3, BarChart3, Palette,
-  FileType2, ShieldQuestion, FileSpreadsheet, FileJson2,
+  FileType2, ShieldQuestion, FileSpreadsheet, FileJson2, Route,
 } from 'lucide-react';
 
 export interface Tool {
@@ -627,5 +627,12 @@ export const TOOLS: Tool[] = [
     description: 'Convert CSV with a header row into a JSON array of objects, with type coercion for numbers and booleans',
     categoryId: 'data',
     icon: FileJson2,
+  },
+  {
+    id: 'json-path-tester',
+    name: 'JSON Path Tester',
+    description: 'Evaluate a JSONPath query against a JSON document and inspect the matched values',
+    categoryId: 'data',
+    icon: Route,
   },
 ];

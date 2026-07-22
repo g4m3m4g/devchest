@@ -153,7 +153,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] JSON to Zod Schema Generator
 - [x] JSON to CSV Converter
 - [x] CSV to JSON Converter
-- [ ] JSON Path Tester (JSONPath / jq-style queries)
+- [x] JSON Path Tester (JSONPath / jq-style queries)
 - [ ] JSON Schema Validator
 - [ ] OpenAPI / Swagger Validator
 - [ ] XML to JSON Converter
