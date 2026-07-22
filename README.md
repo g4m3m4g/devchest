@@ -4,10 +4,10 @@
 
 <h1>DevChest</h1>
 
-<p>A fast, privacy-first developer utility hub.<br>69 tools, zero backend, everything runs in your browser.</p>
+<p>A fast, privacy-first developer utility hub.<br>87 tools, zero backend, everything runs in your browser.</p>
 
 [![Deploy](https://github.com/g4m3m4g/DevChest/actions/workflows/deploy.yml/badge.svg)](https://github.com/g4m3m4g/DevChest/actions/workflows/deploy.yml)
-![Tests](https://img.shields.io/badge/tests-1670%20passing-22c55e?style=flat)
+![Tests](https://img.shields.io/badge/tests-2007%20passing-22c55e?style=flat)
 ![React](https://img.shields.io/badge/React-19-61dafb?style=flat&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-6-3178c6?style=flat&logo=typescript&logoColor=white)
 ![Node](https://img.shields.io/badge/Node-%3E%3D22-339933?style=flat&logo=node.js&logoColor=white)
@@ -135,6 +135,34 @@ DevChest is an open-source collection of everyday developer utilities — format
 | **.htaccess Generator** | Build an Apache .htaccess file — HTTPS/www redirects, custom redirects, error pages, caching, compression, and access rules |
 | **Nano ID Generator** | Generate bulk Nano IDs with configurable size and alphabet — compact, URL-safe, cryptographically random |
 
+### Numbers & Math
+
+| Tool | Description |
+|---|---|
+| **Unit Converter** | Convert between length, weight, temperature, area, and volume units |
+| **Currency Converter** | Convert between world currencies using live exchange rates |
+| **Percentage Calculator** | Calculate percentages, percent-of values, and percentage change |
+| **Aspect Ratio Calculator** | Simplify a width/height ratio and solve for a missing dimension |
+| **Bitwise Calculator** | Compute AND, OR, XOR, NOT, and bit shifts with a binary result view |
+| **IEEE 754 Float Visualizer** | Break a floating-point number down into its sign, exponent, and mantissa bits |
+| **Roman Numeral Converter** | Convert between Arabic numbers and Roman numerals (1–3999) |
+| **Big Number Calculator** | Exact arbitrary-precision integer arithmetic — no floating-point rounding |
+| **Fibonacci / Prime Sequence Generator** | Generate the first N Fibonacci numbers, or list primes up to a limit |
+| **Matrix Calculator** | Add, subtract, multiply, transpose matrices, and compute determinant/inverse for square matrices |
+| **Statistics Calculator** | Compute mean, median, mode, standard deviation, and more from a list of numbers |
+| **Color Math** | Mix two colors, and check WCAG contrast ratio and pass/fail levels |
+
+### Data & Code
+
+| Tool | Description |
+|---|---|
+| **JSON to TypeScript Interface Generator** | Infer TypeScript interfaces from a JSON payload, including nested objects and arrays |
+| **JSON to Zod Schema Generator** | Infer a Zod validation schema from a JSON payload, including nested objects and arrays |
+| **JSON to CSV Converter** | Convert a JSON array of objects into CSV, flattening nested fields with dot notation |
+| **CSV to JSON Converter** | Convert CSV with a header row into a JSON array of objects, with type coercion for numbers and booleans |
+| **JSON Path Tester** | Evaluate a JSONPath query against a JSON document and inspect the matched values |
+| **JSON Schema Validator** | Validate a JSON instance against a JSON Schema and list every violation with its path |
+
 ---
 
 ## Getting Started
@@ -175,9 +203,11 @@ src/
 ├── components/
 │   ├── layout/          # Sidebar, ToolLayout, Breadcrumbs
 │   └── tools/
+│       ├── data/        # 6 data & code tools
 │       ├── encoders/    # 15 encoder/decoder tools
 │       ├── formatters/  # 15 formatter/minifier tools
 │       ├── generators/  # 19 security/generator tools
+│       ├── numbers/     # 12 numbers & math tools
 │       └── text/        # 20 regex & text tools
 ├── config/
 │   ├── tools.ts          # Central tool & category registry
@@ -236,7 +266,7 @@ npm run test:run        # Single pass — run before every commit
 npm run test:coverage   # With V8 coverage report
 ```
 
-**1670 tests, 0 failures** across 137 test files — every tool component and every lib module is covered.
+**2007 tests, 0 failures** across 173 test files — every tool component and every lib module is covered.
 
 Notable patterns in the test suite:
 
