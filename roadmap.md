@@ -154,7 +154,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] JSON to CSV Converter
 - [x] CSV to JSON Converter
 - [x] JSON Path Tester (JSONPath / jq-style queries)
-- [ ] JSON Schema Validator
+- [x] JSON Schema Validator
 - [ ] OpenAPI / Swagger Validator
 - [ ] XML to JSON Converter
 - [ ] cron Expression Parser & Builder

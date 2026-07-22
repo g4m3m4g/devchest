@@ -87,6 +87,7 @@ const JsonToZodTool = lazy(() => import('../components/tools/data/JsonToZodTool'
 const JsonToCsvTool = lazy(() => import('../components/tools/data/JsonToCsvTool'));
 const CsvToJsonTool = lazy(() => import('../components/tools/data/CsvToJsonTool'));
 const JsonPathTesterTool = lazy(() => import('../components/tools/data/JsonPathTesterTool'));
+const JsonSchemaValidatorTool = lazy(() => import('../components/tools/data/JsonSchemaValidatorTool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -175,4 +176,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-to-csv': <JsonToCsvTool />,
   'csv-to-json': <CsvToJsonTool />,
   'json-path-tester': <JsonPathTesterTool />,
+  'json-schema-validator': <JsonSchemaValidatorTool />,
 };

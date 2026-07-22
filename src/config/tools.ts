@@ -7,7 +7,7 @@ import {
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
   Ruler, Coins, Percent, Proportions, Cpu, Waves, Landmark, Sigma, Repeat, Grid3x3, BarChart3, Palette,
-  FileType2, ShieldQuestion, FileSpreadsheet, FileJson2, Route,
+  FileType2, ShieldQuestion, FileSpreadsheet, FileJson2, Route, ShieldCheck as SchemaCheck,
 } from 'lucide-react';
 
 export interface Tool {
@@ -634,5 +634,12 @@ export const TOOLS: Tool[] = [
     description: 'Evaluate a JSONPath query against a JSON document and inspect the matched values',
     categoryId: 'data',
     icon: Route,
+  },
+  {
+    id: 'json-schema-validator',
+    name: 'JSON Schema Validator',
+    description: 'Validate a JSON instance against a JSON Schema and list every violation with its path',
+    categoryId: 'data',
+    icon: SchemaCheck,
   },
 ];
