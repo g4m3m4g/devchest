@@ -156,7 +156,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] JSON Path Tester (JSONPath / jq-style queries)
 - [x] JSON Schema Validator
 - [x] OpenAPI / Swagger Validator
-- [ ] XML to JSON Converter
+- [x] XML to JSON Converter
 - [ ] cron Expression Parser & Builder
 - [ ] Semver Calculator (range matching, bump preview)
 - [ ] Git Commit Message Linter (Conventional Commits)

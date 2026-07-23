@@ -7,7 +7,7 @@ import {
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
   Ruler, Coins, Percent, Proportions, Cpu, Waves, Landmark, Sigma, Repeat, Grid3x3, BarChart3, Palette,
-  FileType2, ShieldQuestion, FileSpreadsheet, FileJson2, Route, ShieldCheck as SchemaCheck, FileCheck2,
+  FileType2, ShieldQuestion, FileSpreadsheet, FileJson2, Route, ShieldCheck as SchemaCheck, FileCheck2, FileDigit,
 } from 'lucide-react';
 
 export interface Tool {
@@ -648,5 +648,12 @@ export const TOOLS: Tool[] = [
     description: 'Validate an OpenAPI 3.x or Swagger 2.0 document (JSON or YAML) and list every structural violation with its path',
     categoryId: 'data',
     icon: FileCheck2,
+  },
+  {
+    id: 'xml-to-json',
+    name: 'XML to JSON Converter',
+    description: 'Convert XML into a JSON object, mapping attributes with an @ prefix and mixed text content to #text',
+    categoryId: 'data',
+    icon: FileDigit,
   },
 ];

@@ -89,6 +89,7 @@ const CsvToJsonTool = lazy(() => import('../components/tools/data/CsvToJsonTool'
 const JsonPathTesterTool = lazy(() => import('../components/tools/data/JsonPathTesterTool'));
 const JsonSchemaValidatorTool = lazy(() => import('../components/tools/data/JsonSchemaValidatorTool'));
 const OpenApiValidatorTool = lazy(() => import('../components/tools/data/OpenApiValidatorTool'));
+const XmlToJsonTool = lazy(() => import('../components/tools/data/XmlToJsonTool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -179,4 +180,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-path-tester': <JsonPathTesterTool />,
   'json-schema-validator': <JsonSchemaValidatorTool />,
   'openapi-validator': <OpenApiValidatorTool />,
+  'xml-to-json': <XmlToJsonTool />,
 };
