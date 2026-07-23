@@ -157,7 +157,7 @@ Tools are grouped by category. Checked items are already shipped.
 - [x] JSON Schema Validator
 - [x] OpenAPI / Swagger Validator
 - [x] XML to JSON Converter
-- [ ] cron Expression Parser & Builder
+- [x] cron Expression Parser & Builder
 - [ ] Semver Calculator (range matching, bump preview)
 - [ ] Git Commit Message Linter (Conventional Commits)
 - [ ] SQL → Prisma Schema Generator

@@ -7,7 +7,7 @@ import {
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
   Ruler, Coins, Percent, Proportions, Cpu, Waves, Landmark, Sigma, Repeat, Grid3x3, BarChart3, Palette,
-  FileType2, ShieldQuestion, FileSpreadsheet, FileJson2, Route, ShieldCheck as SchemaCheck, FileCheck2, FileDigit,
+  FileType2, ShieldQuestion, FileSpreadsheet, FileJson2, Route, ShieldCheck as SchemaCheck, FileCheck2, FileDigit, Timer,
 } from 'lucide-react';
 
 export interface Tool {
@@ -655,5 +655,12 @@ export const TOOLS: Tool[] = [
     description: 'Convert XML into a JSON object, mapping attributes with an @ prefix and mixed text content to #text',
     categoryId: 'data',
     icon: FileDigit,
+  },
+  {
+    id: 'cron-builder',
+    name: 'cron Expression Parser & Builder',
+    description: 'Build or parse a cron expression field by field, see a plain-English description, and preview upcoming run times',
+    categoryId: 'data',
+    icon: Timer,
   },
 ];

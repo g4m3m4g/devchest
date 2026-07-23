@@ -90,6 +90,7 @@ const JsonPathTesterTool = lazy(() => import('../components/tools/data/JsonPathT
 const JsonSchemaValidatorTool = lazy(() => import('../components/tools/data/JsonSchemaValidatorTool'));
 const OpenApiValidatorTool = lazy(() => import('../components/tools/data/OpenApiValidatorTool'));
 const XmlToJsonTool = lazy(() => import('../components/tools/data/XmlToJsonTool'));
+const CronBuilderTool = lazy(() => import('../components/tools/data/CronBuilderTool'));
 
 export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-formatter':      <JsonFormatter />,
@@ -181,4 +182,5 @@ export const TOOL_MAP: Record<string, React.ReactNode> = {
   'json-schema-validator': <JsonSchemaValidatorTool />,
   'openapi-validator': <OpenApiValidatorTool />,
   'xml-to-json': <XmlToJsonTool />,
+  'cron-builder': <CronBuilderTool />,
 };
