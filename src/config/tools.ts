@@ -7,7 +7,7 @@ import {
   Hash, Fingerprint, Clock, FileUp, AlignJustify, WholeWord, ArrowUpAZ, FlipHorizontal2, Link2, Eraser, Quote, Replace, Filter, Columns3, FileCode2, FileText, Sparkles, GitCompareArrows, GraduationCap, ListX, MessageSquareText,
   Boxes, Barcode, KeyRound, BookText, ShieldCheck, TimerReset, Lock, LockKeyhole, KeySquare, FileBadge, Terminal, ShieldAlert, ShieldHalf, Bot, FileCog, Dna,
   Ruler, Coins, Percent, Proportions, Cpu, Waves, Landmark, Sigma, Repeat, Grid3x3, BarChart3, Palette,
-  FileType2, ShieldQuestion, FileSpreadsheet, FileJson2, Route, ShieldCheck as SchemaCheck,
+  FileType2, ShieldQuestion, FileSpreadsheet, FileJson2, Route, ShieldCheck as SchemaCheck, FileCheck2,
 } from 'lucide-react';
 
 export interface Tool {
@@ -641,5 +641,12 @@ export const TOOLS: Tool[] = [
     description: 'Validate a JSON instance against a JSON Schema and list every violation with its path',
     categoryId: 'data',
     icon: SchemaCheck,
+  },
+  {
+    id: 'openapi-validator',
+    name: 'OpenAPI / Swagger Validator',
+    description: 'Validate an OpenAPI 3.x or Swagger 2.0 document (JSON or YAML) and list every structural violation with its path',
+    categoryId: 'data',
+    icon: FileCheck2,
   },
 ];
